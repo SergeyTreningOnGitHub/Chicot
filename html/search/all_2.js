@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['wallet_3',['Wallet',['../classWallet.html',1,'']]],
-  ['wallet_2ecpp_4',['wallet.cpp',['../wallet_8cpp.html',1,'']]],
-  ['wallet_2eh_5',['wallet.h',['../wallet_8h.html',1,'']]]
+  ['gendigest_3',['GenDigest',['../classCrypto.html#acf0d429e5e8b9d5af4a583d5acbb670f',1,'Crypto']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init_0',['Init',['../classWallet.html#ac81457ad7c6a5b56d54e04e62ec40453',1,'Wallet']]]
+  ['bytemessage_0',['ByteMessage',['../crypto_8h.html#a07182bcc71bc889490bf23ed33f79774',1,'crypto.h']]]
 ];
