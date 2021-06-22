@@ -1,5 +1,6 @@
 [requires]
 openssl/1.1.1k
+boost/1.76.0
 capnproto/0.8.0
 zeromq/4.3.4
 gtest/cci.20210126
