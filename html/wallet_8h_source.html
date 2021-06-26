@@ -72,19 +72,37 @@ $(function() {
 <div class="contents">
 <a href="wallet_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="classWallet.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="classWallet.html">Wallet</a>{</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classWallet.html#ad9be9e49244b78db9099fcaeccd1af04">    5</a></span>&#160;    <a class="code" href="classWallet.html#ad9be9e49244b78db9099fcaeccd1af04">Wallet</a>(){        </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    }</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde">    9</a></span>&#160;    <a class="code" href="classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde">~Wallet</a>(){</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;          </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
-<div class="ttc" id="aclassWallet_html"><div class="ttname"><a href="classWallet.html">Wallet</a></div><div class="ttdef"><b>Definition:</b> wallet.h:3</div></div>
-<div class="ttc" id="aclassWallet_html_a443dc95f50e4a9d8e6d5282e13fedcde"><div class="ttname"><a href="classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde">Wallet::~Wallet</a></div><div class="ttdeci">~Wallet()</div><div class="ttdef"><b>Definition:</b> wallet.h:9</div></div>
-<div class="ttc" id="aclassWallet_html_ad9be9e49244b78db9099fcaeccd1af04"><div class="ttname"><a href="classWallet.html#ad9be9e49244b78db9099fcaeccd1af04">Wallet::Wallet</a></div><div class="ttdeci">Wallet()</div><div class="ttdef"><b>Definition:</b> wallet.h:5</div></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="crypto_8h.html">crypto.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classWallet.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classWallet.html">Wallet</a>{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classWallet.html#a07c5a15d517b93e6afba675d851ef7ce">    8</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classWallet.html#a07c5a15d517b93e6afba675d851ef7ce">is_gen_keys_</a>;    </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classWallet.html#ad9be9e49244b78db9099fcaeccd1af04">   10</a></span>&#160;    <a class="code" href="classWallet.html#ad9be9e49244b78db9099fcaeccd1af04">Wallet</a>(){        </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classWallet.html#aabf367c267af1e2790e036983af4541d">   14</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWallet.html#aabf367c267af1e2790e036983af4541d">SignData</a>(<span class="keyword">const</span> <a class="code" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a>&amp; data){</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classWallet.html#a40dee7618d0a7b01855e536e80e664e7">   18</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWallet.html#a40dee7618d0a7b01855e536e80e664e7">GenKeys</a>(){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde">   22</a></span>&#160;    <a class="code" href="classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde">~Wallet</a>(){</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;          </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="ttc" id="aclassWallet_html"><div class="ttname"><a href="classWallet.html">Wallet</a></div><div class="ttdef"><b>Definition:</b> wallet.h:7</div></div>
+<div class="ttc" id="aclassWallet_html_a07c5a15d517b93e6afba675d851ef7ce"><div class="ttname"><a href="classWallet.html#a07c5a15d517b93e6afba675d851ef7ce">Wallet::is_gen_keys_</a></div><div class="ttdeci">bool is_gen_keys_</div><div class="ttdef"><b>Definition:</b> wallet.h:8</div></div>
+<div class="ttc" id="aclassWallet_html_a40dee7618d0a7b01855e536e80e664e7"><div class="ttname"><a href="classWallet.html#a40dee7618d0a7b01855e536e80e664e7">Wallet::GenKeys</a></div><div class="ttdeci">void GenKeys()</div><div class="ttdef"><b>Definition:</b> wallet.h:18</div></div>
+<div class="ttc" id="aclassWallet_html_a443dc95f50e4a9d8e6d5282e13fedcde"><div class="ttname"><a href="classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde">Wallet::~Wallet</a></div><div class="ttdeci">~Wallet()</div><div class="ttdef"><b>Definition:</b> wallet.h:22</div></div>
+<div class="ttc" id="aclassWallet_html_aabf367c267af1e2790e036983af4541d"><div class="ttname"><a href="classWallet.html#aabf367c267af1e2790e036983af4541d">Wallet::SignData</a></div><div class="ttdeci">void SignData(const ByteMessage &amp;data)</div><div class="ttdef"><b>Definition:</b> wallet.h:14</div></div>
+<div class="ttc" id="aclassWallet_html_ad9be9e49244b78db9099fcaeccd1af04"><div class="ttname"><a href="classWallet.html#ad9be9e49244b78db9099fcaeccd1af04">Wallet::Wallet</a></div><div class="ttdeci">Wallet()</div><div class="ttdef"><b>Definition:</b> wallet.h:10</div></div>
+<div class="ttc" id="acrypto_8h_html"><div class="ttname"><a href="crypto_8h.html">crypto.h</a></div></div>
+<div class="ttc" id="acrypto_8h_html_a07182bcc71bc889490bf23ed33f79774"><div class="ttname"><a href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; ByteMessage</div><div class="ttdef"><b>Definition:</b> crypto.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

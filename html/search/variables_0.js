@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sha256_5fsize_22',['SHA256_SIZE',['../crypto_8h.html#a87802b739e02e743dd1ee14131aefc9a',1,'crypto.h']]]
+  ['is_5fgen_5fkeys_5f_26',['is_gen_keys_',['../classWallet.html#a07c5a15d517b93e6afba675d851ef7ce',1,'Wallet']]]
 ];

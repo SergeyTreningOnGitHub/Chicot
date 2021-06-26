@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['gendigest_3',['GenDigest',['../classCrypto.html#acf0d429e5e8b9d5af4a583d5acbb670f',1,'Crypto']]]
+  ['gendigest_2',['GenDigest',['../crypto_8h.html#a601267815b657e52451dcfebf55aff5b',1,'crypto.h']]],
+  ['genkeys_3',['GenKeys',['../classWallet.html#a40dee7618d0a7b01855e536e80e664e7',1,'Wallet']]]
 ];
