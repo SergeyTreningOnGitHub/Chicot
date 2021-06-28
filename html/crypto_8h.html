@@ -74,10 +74,11 @@ $(function() {
 <div class="title">crypto.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;openssl/conf.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
+<code>#include &lt;openssl/conf.h&gt;</code><br />
 <code>#include &lt;openssl/evp.h&gt;</code><br />
 <code>#include &lt;openssl/err.h&gt;</code><br />
-<code>#include &lt;boost/multiprecision/cpp_int.hpp&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
@@ -87,17 +88,25 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a1ac295cf0e9f35d1e4e6d4845b8ad38c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#a1ac295cf0e9f35d1e4e6d4845b8ad38c">INT512</a> = boost::multiprecision::int512_t</td></tr>
-<tr class="separator:a1ac295cf0e9f35d1e4e6d4845b8ad38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bac697db58755264db56a24eb8632b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#a8bac697db58755264db56a24eb8632b7">INT256</a> = boost::multiprecision::int256_t</td></tr>
-<tr class="separator:a8bac697db58755264db56a24eb8632b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6cbdb4faa35e8df96ba077898fa2fdb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#ab6cbdb4faa35e8df96ba077898fa2fdb">EC_Sign</a> = std::vector&lt; uint8_t &gt;</td></tr>
+<tr class="separator:ab6cbdb4faa35e8df96ba077898fa2fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45665451c99d76f9d9f638f3fe36d7b8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#a45665451c99d76f9d9f638f3fe36d7b8">PrivateKey</a> = std::vector&lt; uint8_t &gt;</td></tr>
+<tr class="separator:a45665451c99d76f9d9f638f3fe36d7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fd7b9f6ff0e20ff3bf7bb623d8aa49"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#a06fd7b9f6ff0e20ff3bf7bb623d8aa49">PublicKey</a> = std::vector&lt; uint8_t &gt;</td></tr>
+<tr class="separator:a06fd7b9f6ff0e20ff3bf7bb623d8aa49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a82216b5b2f5b8bd5acb4f09a89b9c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#a79a82216b5b2f5b8bd5acb4f09a89b9c">SHA256_Digest</a> = std::vector&lt; uint8_t &gt;</td></tr>
+<tr class="separator:a79a82216b5b2f5b8bd5acb4f09a89b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07182bcc71bc889490bf23ed33f79774"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> = std::vector&lt; uint8_t &gt;</td></tr>
 <tr class="separator:a07182bcc71bc889490bf23ed33f79774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a601267815b657e52451dcfebf55aff5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a8bac697db58755264db56a24eb8632b7">INT256</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#a601267815b657e52451dcfebf55aff5b">GenDigest</a> (const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;msg)</td></tr>
-<tr class="separator:a601267815b657e52451dcfebf55aff5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef18f0d533a69708d9442996301f0d98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#aef18f0d533a69708d9442996301f0d98">GetCurveNid</a> ()</td></tr>
+<tr class="separator:aef18f0d533a69708d9442996301f0d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7d177025bc5de701aacdbdb69c508f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a79a82216b5b2f5b8bd5acb4f09a89b9c">SHA256_Digest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#aff7d177025bc5de701aacdbdb69c508f">GenDigest</a> (const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;msg)</td></tr>
+<tr class="separator:aff7d177025bc5de701aacdbdb69c508f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4064f356b0f73f045ac9467d69ab440a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crypto_8h.html#a4064f356b0f73f045ac9467d69ab440a">VerifySign</a> (const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;msg, const <a class="el" href="crypto_8h.html#ab6cbdb4faa35e8df96ba077898fa2fdb">EC_Sign</a> &amp;sig, const <a class="el" href="crypto_8h.html#a06fd7b9f6ff0e20ff3bf7bb623d8aa49">PublicKey</a> &amp;pub_key)</td></tr>
+<tr class="separator:a4064f356b0f73f045ac9467d69ab440a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -119,28 +128,56 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8bac697db58755264db56a24eb8632b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bac697db58755264db56a24eb8632b7">&#9670;&nbsp;</a></span>INT256</h2>
+<a id="ab6cbdb4faa35e8df96ba077898fa2fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6cbdb4faa35e8df96ba077898fa2fdb">&#9670;&nbsp;</a></span>EC_Sign</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="crypto_8h.html#a8bac697db58755264db56a24eb8632b7">INT256</a> =  boost::multiprecision::int256_t</td>
+          <td class="memname">using <a class="el" href="crypto_8h.html#ab6cbdb4faa35e8df96ba077898fa2fdb">EC_Sign</a> =  std::vector&lt;uint8_t&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a1ac295cf0e9f35d1e4e6d4845b8ad38c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ac295cf0e9f35d1e4e6d4845b8ad38c">&#9670;&nbsp;</a></span>INT512</h2>
+<a id="a45665451c99d76f9d9f638f3fe36d7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45665451c99d76f9d9f638f3fe36d7b8">&#9670;&nbsp;</a></span>PrivateKey</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="crypto_8h.html#a1ac295cf0e9f35d1e4e6d4845b8ad38c">INT512</a> =  boost::multiprecision::int512_t</td>
+          <td class="memname">using <a class="el" href="crypto_8h.html#a45665451c99d76f9d9f638f3fe36d7b8">PrivateKey</a> =  std::vector&lt;uint8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06fd7b9f6ff0e20ff3bf7bb623d8aa49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fd7b9f6ff0e20ff3bf7bb623d8aa49">&#9670;&nbsp;</a></span>PublicKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="crypto_8h.html#a06fd7b9f6ff0e20ff3bf7bb623d8aa49">PublicKey</a> =  std::vector&lt;uint8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79a82216b5b2f5b8bd5acb4f09a89b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79a82216b5b2f5b8bd5acb4f09a89b9c">&#9670;&nbsp;</a></span>SHA256_Digest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="crypto_8h.html#a79a82216b5b2f5b8bd5acb4f09a89b9c">SHA256_Digest</a> =  std::vector&lt;uint8_t&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -148,18 +185,69 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a601267815b657e52451dcfebf55aff5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a601267815b657e52451dcfebf55aff5b">&#9670;&nbsp;</a></span>GenDigest()</h2>
+<a id="aff7d177025bc5de701aacdbdb69c508f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff7d177025bc5de701aacdbdb69c508f">&#9670;&nbsp;</a></span>GenDigest()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="crypto_8h.html#a8bac697db58755264db56a24eb8632b7">INT256</a> GenDigest </td>
+          <td class="memname"><a class="el" href="crypto_8h.html#a79a82216b5b2f5b8bd5acb4f09a89b9c">SHA256_Digest</a> GenDigest </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef18f0d533a69708d9442996301f0d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef18f0d533a69708d9442996301f0d98">&#9670;&nbsp;</a></span>GetCurveNid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GetCurveNid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4064f356b0f73f045ac9467d69ab440a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4064f356b0f73f045ac9467d69ab440a">&#9670;&nbsp;</a></span>VerifySign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VerifySign </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="crypto_8h.html#ab6cbdb4faa35e8df96ba077898fa2fdb">EC_Sign</a> &amp;&#160;</td>
+          <td class="paramname"><em>sig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="crypto_8h.html#a06fd7b9f6ff0e20ff3bf7bb623d8aa49">PublicKey</a> &amp;&#160;</td>
+          <td class="paramname"><em>pub_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

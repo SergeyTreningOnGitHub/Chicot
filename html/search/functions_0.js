@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['gendigest_20',['GenDigest',['../crypto_8h.html#a601267815b657e52451dcfebf55aff5b',1,'crypto.h']]],
-  ['genkeys_21',['GenKeys',['../classWallet.html#a40dee7618d0a7b01855e536e80e664e7',1,'Wallet']]]
+  ['exitwithmsg_36',['ExitWithMsg',['../utils_8h.html#a9d2887cee11c35151eb85b6f7fd0b1a1',1,'ExitWithMsg(const std::string &amp;msg):&#160;utils.cpp'],['../utils_8cpp.html#a9d2887cee11c35151eb85b6f7fd0b1a1',1,'ExitWithMsg(const std::string &amp;msg):&#160;utils.cpp']]]
 ];

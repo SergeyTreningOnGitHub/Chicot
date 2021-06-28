@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7ewallet_25',['~Wallet',['../classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde',1,'Wallet']]]
+  ['saveprivate_46',['SavePrivate',['../classWallet.html#a230559f4f69b6d3cf310459a842e4f23',1,'Wallet']]],
+  ['signmessage_47',['SignMessage',['../classWallet.html#a84e60fe964332d30025a0792cb575462',1,'Wallet']]]
 ];

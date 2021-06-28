@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['is_5fgen_5fkeys_5f_26',['is_gen_keys_',['../classWallet.html#a07c5a15d517b93e6afba675d851ef7ce',1,'Wallet']]]
+  ['ec_5fkey_5f_50',['ec_key_',['../classWallet.html#a18ca9be3de79beb85262b3e62acdd3d4',1,'Wallet']]]
 ];

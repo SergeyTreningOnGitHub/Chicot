@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['signdata_23',['SignData',['../classWallet.html#aabf367c267af1e2790e036983af4541d',1,'Wallet']]]
+  ['loadprivate_44',['LoadPrivate',['../classWallet.html#a8a3b7988e4aeee57816ea35b1d90ec55',1,'Wallet']]]
 ];

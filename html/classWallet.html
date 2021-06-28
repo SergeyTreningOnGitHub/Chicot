@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classWallet-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -77,17 +78,32 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9be9e49244b78db9099fcaeccd1af04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#ad9be9e49244b78db9099fcaeccd1af04">Wallet</a> ()</td></tr>
 <tr class="separator:ad9be9e49244b78db9099fcaeccd1af04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf367c267af1e2790e036983af4541d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#aabf367c267af1e2790e036983af4541d">SignData</a> (const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;data)</td></tr>
-<tr class="separator:aabf367c267af1e2790e036983af4541d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230559f4f69b6d3cf310459a842e4f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a230559f4f69b6d3cf310459a842e4f23">SavePrivate</a> (const std::string &amp;filename) const</td></tr>
+<tr class="separator:a230559f4f69b6d3cf310459a842e4f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3b7988e4aeee57816ea35b1d90ec55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a8a3b7988e4aeee57816ea35b1d90ec55">LoadPrivate</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a8a3b7988e4aeee57816ea35b1d90ec55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40dee7618d0a7b01855e536e80e664e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a40dee7618d0a7b01855e536e80e664e7">GenKeys</a> ()</td></tr>
 <tr class="separator:a40dee7618d0a7b01855e536e80e664e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a443dc95f50e4a9d8e6d5282e13fedcde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde">~Wallet</a> ()</td></tr>
-<tr class="separator:a443dc95f50e4a9d8e6d5282e13fedcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e60fe964332d30025a0792cb575462"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#ab6cbdb4faa35e8df96ba077898fa2fdb">EC_Sign</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a84e60fe964332d30025a0792cb575462">SignMessage</a> (const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;msg) const</td></tr>
+<tr class="separator:a84e60fe964332d30025a0792cb575462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae832396ba79f601a1635ddc7d5da85f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a45665451c99d76f9d9f638f3fe36d7b8">PrivateKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#ae832396ba79f601a1635ddc7d5da85f4">GetPrivateKey</a> () const</td></tr>
+<tr class="separator:ae832396ba79f601a1635ddc7d5da85f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37561a4daafa748451b3afa9833d9e63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a06fd7b9f6ff0e20ff3bf7bb623d8aa49">PublicKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a37561a4daafa748451b3afa9833d9e63">GetPublicKey</a> () const</td></tr>
+<tr class="separator:a37561a4daafa748451b3afa9833d9e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a30a8559e2014f27b9ff8d31e2364f540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a30a8559e2014f27b9ff8d31e2364f540">gen_key_params</a> ()</td></tr>
+<tr class="separator:a30a8559e2014f27b9ff8d31e2364f540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8b388622003a8675e06ce394c67339"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a2f8b388622003a8675e06ce394c67339">gen_keys</a> ()</td></tr>
+<tr class="separator:a2f8b388622003a8675e06ce394c67339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a07c5a15d517b93e6afba675d851ef7ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a07c5a15d517b93e6afba675d851ef7ce">is_gen_keys_</a></td></tr>
-<tr class="separator:a07c5a15d517b93e6afba675d851ef7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08147ca018252d8e568cdffb8e572fee"><td class="memItemLeft" align="right" valign="top">EVP_PKEY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a08147ca018252d8e568cdffb8e572fee">params_</a></td></tr>
+<tr class="separator:a08147ca018252d8e568cdffb8e572fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ca9be3de79beb85262b3e62acdd3d4"><td class="memItemLeft" align="right" valign="top">EVP_PKEY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallet.html#a18ca9be3de79beb85262b3e62acdd3d4">ec_key_</a></td></tr>
+<tr class="separator:a18ca9be3de79beb85262b3e62acdd3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad9be9e49244b78db9099fcaeccd1af04"></a>
@@ -115,8 +131,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a443dc95f50e4a9d8e6d5282e13fedcde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a443dc95f50e4a9d8e6d5282e13fedcde">&#9670;&nbsp;</a></span>~Wallet()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a30a8559e2014f27b9ff8d31e2364f540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a8559e2014f27b9ff8d31e2364f540">&#9670;&nbsp;</a></span>gen_key_params()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,7 +142,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Wallet::~Wallet </td>
+          <td class="memname">void Wallet::gen_key_params </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -133,14 +150,38 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2f8b388622003a8675e06ce394c67339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f8b388622003a8675e06ce394c67339">&#9670;&nbsp;</a></span>gen_keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Wallet::gen_keys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a40dee7618d0a7b01855e536e80e664e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40dee7618d0a7b01855e536e80e664e7">&#9670;&nbsp;</a></span>GenKeys()</h2>
 
@@ -166,8 +207,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aabf367c267af1e2790e036983af4541d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabf367c267af1e2790e036983af4541d">&#9670;&nbsp;</a></span>SignData()</h2>
+<a id="ae832396ba79f601a1635ddc7d5da85f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae832396ba79f601a1635ddc7d5da85f4">&#9670;&nbsp;</a></span>GetPrivateKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,10 +217,60 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Wallet::SignData </td>
+          <td class="memname"><a class="el" href="crypto_8h.html#a45665451c99d76f9d9f638f3fe36d7b8">PrivateKey</a> Wallet::GetPrivateKey </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37561a4daafa748451b3afa9833d9e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37561a4daafa748451b3afa9833d9e63">&#9670;&nbsp;</a></span>GetPublicKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="crypto_8h.html#a06fd7b9f6ff0e20ff3bf7bb623d8aa49">PublicKey</a> Wallet::GetPublicKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a3b7988e4aeee57816ea35b1d90ec55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a3b7988e4aeee57816ea35b1d90ec55">&#9670;&nbsp;</a></span>LoadPrivate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Wallet::LoadPrivate </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -192,9 +283,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a07c5a15d517b93e6afba675d851ef7ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07c5a15d517b93e6afba675d851ef7ce">&#9670;&nbsp;</a></span>is_gen_keys_</h2>
+<a id="a230559f4f69b6d3cf310459a842e4f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230559f4f69b6d3cf310459a842e4f23">&#9670;&nbsp;</a></span>SavePrivate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +293,82 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Wallet::is_gen_keys_</td>
+          <td class="memname">void Wallet::SavePrivate </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84e60fe964332d30025a0792cb575462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e60fe964332d30025a0792cb575462">&#9670;&nbsp;</a></span>SignMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="crypto_8h.html#ab6cbdb4faa35e8df96ba077898fa2fdb">EC_Sign</a> Wallet::SignMessage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a18ca9be3de79beb85262b3e62acdd3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ca9be3de79beb85262b3e62acdd3d4">&#9670;&nbsp;</a></span>ec_key_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EVP_PKEY* Wallet::ec_key_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08147ca018252d8e568cdffb8e572fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08147ca018252d8e568cdffb8e572fee">&#9670;&nbsp;</a></span>params_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EVP_PKEY* Wallet::params_</td>
         </tr>
       </table>
   </td>
