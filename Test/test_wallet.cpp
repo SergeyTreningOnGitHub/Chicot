@@ -4,7 +4,7 @@
 
 using namespace std;
 
-TEST(Wallet, TestDummy){    
+TEST(WalletTest, TestDummy){    
     ASSERT_TRUE(true);
 }
 

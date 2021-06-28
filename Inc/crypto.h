@@ -1,5 +1,6 @@
 #pragma once
 
+#include "utils.h"
 #include <openssl/conf.h>
 #include <openssl/evp.h>
 #include <openssl/err.h>
@@ -18,14 +19,8 @@ using PublicKey  = std::vector<uint8_t>;
 using SHA256_Digest = std::vector<uint8_t>;
 using ByteMessage = std::vector<uint8_t>;
 
-int GetCurveNid(){
-    const char* curve_name = "secp256k1";
-    int curve_nid = EC_curve_nist2nid(curve_name);
-    if (curve_nid == NID_undef) {
-        // try converting the shortname (sn) to nid (numberic id)
-        curve_nid = OBJ_sn2nid(curve_name);
-    }
-    return curve_nid;
+int GetCurveNid(){    
+    return NID_secp256k1;
 }
 
 SHA256_Digest GenDigest(const ByteMessage& msg){        
@@ -43,17 +38,19 @@ SHA256_Digest GenDigest(const ByteMessage& msg){
     return res;
 }
 
-bool VerifySign(const ByteMessage& msg, const EcSign& sig, const PublicKey& pub_key){
+bool VerifySign(const ByteMessage& msg, const EC_Sign& sig, const PublicKey& pub_key){
     int curve_nid = GetCurveNid();
+
+    EVP_MD_CTX* mdctx = EVP_MD_CTX_new();
 
     EVP_PKEY* pub_key_formed = EVP_PKEY_new_raw_public_key(curve_nid, NULL, pub_key.data(), pub_key.size());
 
     if(1 != EVP_DigestVerifyInit(mdctx, NULL, EVP_sha256(), NULL, pub_key_formed)){ 
-        goto err;
+        EXIT_WITH_MSG("Can't init verify operation");
     }
 
     if(1 != EVP_DigestVerifyUpdate(mdctx, msg.data(), msg.size())){
-         goto err;
+        EXIT_WITH_MSG("Error verifing message");
     }
 
     if(1 == EVP_DigestVerifyFinal(mdctx, sig.data(), sig.size()))
@@ -66,4 +63,5 @@ bool VerifySign(const ByteMessage& msg, const EcSign& sig, const PublicKey& pub_
     }
 
     EVP_PKEY_free(pub_key_formed);
+    EVP_MD_CTX_free(mdctx);
 }
