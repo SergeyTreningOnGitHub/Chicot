@@ -4,6 +4,7 @@
 #include <openssl/conf.h>
 #include <openssl/evp.h>
 #include <openssl/err.h>
+#include <openssl/ec.h>
 #include <array>
 #include <vector>
 #include <algorithm>
@@ -39,12 +40,36 @@ SHA256_Digest GenDigest(const ByteMessage& msg){
 }
 
 bool VerifySign(const ByteMessage& msg, const EC_Sign& sig, const PublicKey& pub_key){
+    
     int curve_nid = GetCurveNid();
+    
+    EC_GROUP *curve = EC_GROUP_new_by_curve_name(curve_nid);
+ 
+    if(curve == NULL){
+        EXIT_WITH_MSG("Can't get curve");
+    }
+
+    EC_POINT *point = EC_POINT_new(curve);
+    if (point == NULL){
+        EXIT_WITH_MSG("Can't allocate point");
+    }
+
+    if(!EC_POINT_oct2point(curve, point, pub_key.data(), pub_key.size(), NULL))
+    {
+        EXIT_WITH_MSG("Can't get point");
+    }
+    
+    EC_KEY* ec_key = EC_KEY_new_by_curve_name(curve_nid);
+    if(!EC_KEY_set_public_key(ec_key, point)){
+        EXIT_WITH_MSG("Can't get ec key");
+    }
+
+    EVP_PKEY* pub_key_formed = EVP_PKEY_new();
+    if(!EVP_PKEY_set1_EC_KEY(pub_key_formed, ec_key)){
+        EXIT_WITH_MSG("Can't get evp key");
+    }
 
     EVP_MD_CTX* mdctx = EVP_MD_CTX_new();
-
-    EVP_PKEY* pub_key_formed = EVP_PKEY_new_raw_public_key(curve_nid, NULL, pub_key.data(), pub_key.size());
-
     if(1 != EVP_DigestVerifyInit(mdctx, NULL, EVP_sha256(), NULL, pub_key_formed)){ 
         EXIT_WITH_MSG("Can't init verify operation");
     }
@@ -62,6 +87,9 @@ bool VerifySign(const ByteMessage& msg, const EC_Sign& sig, const PublicKey& pub
         return false;
     }
 
-    EVP_PKEY_free(pub_key_formed);
     EVP_MD_CTX_free(mdctx);
+    EVP_PKEY_free(pub_key_formed);
+    EC_KEY_free(ec_key);
+    EC_POINT_free(point);
+    EC_GROUP_free(curve);
 }

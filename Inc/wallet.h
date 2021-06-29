@@ -123,17 +123,38 @@ public:
     }
 
     PublicKey GetPublicKey() const{
+        EC_KEY* ec_k = EVP_PKEY_get1_EC_KEY(ec_key_);
+        if(ec_k == NULL){
+            EXIT_WITH_MSG("Can't get EC_KEY struct");
+        }
+
+        const EC_POINT* ec_point = EC_KEY_get0_public_key(ec_k);
+        if(ec_point == NULL){
+            EXIT_WITH_MSG("Can't point curve");
+        }
+
+        const EC_GROUP* group = EC_KEY_get0_group(ec_k);
+        if (group == NULL) {
+            EXIT_WITH_MSG("Can't get group");
+        }
+
         PublicKey res;
         size_t pub_key_len = 0;
-        if (!EVP_PKEY_get_raw_public_key(ec_key_, NULL, &pub_key_len)){
-            std::cerr << pub_key_len << std::endl;
-            EXIT_WITH_MSG("Can't get length public key");
+  
+        pub_key_len = EC_POINT_point2oct(group, ec_point,
+                                  POINT_CONVERSION_UNCOMPRESSED,
+                                  NULL, pub_key_len, NULL);
+        if (pub_key_len == 0) {
+            EXIT_WITH_MSG("Can't retreive length public key");
         }
 
         res.resize(pub_key_len);
 
-        if(!EVP_PKEY_get_raw_public_key(ec_key_, res.data(), &pub_key_len)){
-            EXIT_WITH_MSG("Can't get raw public key");
+        pub_key_len = EC_POINT_point2oct(group, ec_point,
+                                  POINT_CONVERSION_UNCOMPRESSED,
+                                  res.data(), pub_key_len, NULL);
+        if (pub_key_len == 0) {
+            EXIT_WITH_MSG("Can't retreive raw public key");
         }
 
         return res;
