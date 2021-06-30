@@ -2,6 +2,7 @@
 #include "crypto.h"
 #include <openssl/ec.h>
 #include <openssl/pem.h>
+#include <openssl/bn.h>
 
 class Wallet{    
     EVP_PKEY* params_;
@@ -47,6 +48,15 @@ class Wallet{
 
 public:
     Wallet() : params_(NULL), ec_key_(NULL){}
+    ~Wallet(){
+        if(params_){
+            EVP_PKEY_free(params_);
+        }
+
+        if(ec_key_){
+            EVP_PKEY_free(ec_key_);
+        }
+    }
 
     void SavePrivate(const std::string& filename) const{
         BIO* file = BIO_new_file((filename + ".pem").c_str(), "w");        
@@ -102,23 +112,43 @@ public:
             EXIT_WITH_MSG("Can't retrieve signatures");
         }       
 
+        sig_res.resize(size_sig);
+        sig_res.shrink_to_fit();
+
         EVP_MD_CTX_destroy(mdctx);
         return sig_res;
     }
 
     PrivateKey GetPrivateKey() const{
-        PrivateKey res;
-        size_t priv_key_len = 0;
-        if (!EVP_PKEY_get_raw_private_key(ec_key_, NULL, &priv_key_len)){
-            EXIT_WITH_MSG("Can't get length private key");;                        
+        EC_KEY* ec_k = EVP_PKEY_get1_EC_KEY(ec_key_);
+        if(ec_k == NULL){
+            EXIT_WITH_MSG("Can't get EC_KEY struct");
         }
 
-        res.resize(priv_key_len);
+        const BIGNUM* private_key = EC_KEY_get0_private_key(ec_k);
+        if(private_key == NULL){
+            EXIT_WITH_MSG("Can't get private key");
+        }
 
-        if(!EVP_PKEY_get_raw_private_key(ec_key_, res.data(), &priv_key_len)){
+        PrivateKey res;
+        size_t priv_key_len = 0;
+
+        priv_key_len = BN_bn2mpi(private_key, NULL);
+        if(priv_key_len == 0){
+            EXIT_WITH_MSG("Can't get length private key");
+        }
+
+        res.resize(priv_key_len);        
+
+        priv_key_len = BN_bn2mpi(private_key, res.data());
+        if(priv_key_len == 0){
             EXIT_WITH_MSG("Can't get raw private key");
         }
 
+        res.resize(priv_key_len);
+        res.shrink_to_fit();
+
+        EC_KEY_free(ec_k);
         return res;
     }
 
@@ -156,6 +186,11 @@ public:
         if (pub_key_len == 0) {
             EXIT_WITH_MSG("Can't retreive raw public key");
         }
+
+        res.resize(pub_key_len);
+        res.shrink_to_fit();
+
+        EC_KEY_free(ec_k);
 
         return res;
     }        

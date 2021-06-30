@@ -73,12 +73,14 @@ bool VerifySign(const ByteMessage& msg, const EC_Sign& sig, const PublicKey& pub
     if(1 != EVP_DigestVerifyInit(mdctx, NULL, EVP_sha256(), NULL, pub_key_formed)){ 
         EXIT_WITH_MSG("Can't init verify operation");
     }
-
+    
     if(1 != EVP_DigestVerifyUpdate(mdctx, msg.data(), msg.size())){
         EXIT_WITH_MSG("Error verifing message");
     }
+    
+    int res = EVP_DigestVerifyFinal(mdctx, sig.data(), sig.size());    
 
-    if(1 == EVP_DigestVerifyFinal(mdctx, sig.data(), sig.size()))
+    if(1 == res)
     {
         return true;
     }

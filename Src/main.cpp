@@ -8,6 +8,12 @@
 
 using namespace std;
 
+void PrintVector(const vector<uint8_t>& vec){
+    for(uint8_t val : vec)
+        cout << hex << val + 0;
+    
+    cout << endl;
+}
 
 int main(int argc, char* argv[]) {	
 	
@@ -21,17 +27,22 @@ int main(int argc, char* argv[]) {
         cout << "Private is generated" << endl;
     }
 
-    ByteMessage mess = {0xFF, 0xFF, 0xFF};
+    ByteMessage mess = {0x5A, 0x5A, 0x5A, 0x5A};    
+
     EC_Sign sign = wallet.SignMessage(mess);
 
     cout << "Message is signed" << endl;
     PublicKey pub_key = wallet.GetPublicKey();
 
     bool is_verified = VerifySign(mess, sign, pub_key);
-    if(is_verified)
+    if(is_verified){
         cout << "Verification success" << endl;
-    else
+        PrintVector(sign);
+    }
+    else{
+        PrintVector(sign);
         cout << "Verification error" << endl;
+    }
 
     mess[0] = 0xAA;
 
