@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wallet_49',['Wallet',['../classWallet.html#ad9be9e49244b78db9099fcaeccd1af04',1,'Wallet']]]
+  ['verifysign_51',['VerifySign',['../crypto_8h.html#a4064f356b0f73f045ac9467d69ab440a',1,'crypto.h']]]
 ];
