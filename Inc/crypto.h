@@ -10,7 +10,7 @@
 #include <algorithm>
 #include <cassert>
 #include <iostream>
-
+#include <type_traits>
 
 constexpr uint32_t SHA256_SIZE = 32;
 
@@ -94,4 +94,64 @@ bool VerifySign(const ByteMessage& msg, const EC_Sign& sig, const PublicKey& pub
     EC_KEY_free(ec_key);
     EC_POINT_free(point);
     EC_GROUP_free(curve);
+}
+
+
+template<typename T>
+ByteMessage Serialize(const T& val){
+    ByteMessage res;
+    if constexpr(std::is_integral<T>::value){
+        for(int i = 0;i < sizeof(val);i++){
+            res.push_back(uint8_t((val >> (i * sizeof(uint8_t))) & 0xFF));            
+        }
+    }else if constexpr(std::is_same<T, ByteMessage>::value){
+        res.push_back((uint8_t)(val.size() & 0xFF));
+        std::copy(val.begin(), val.end(), back_inserter(res));
+    }else{
+        ByteMessage inner = val.Serialize();
+        std::copy(inner.begin(), inner.end(), back_inserter(res));
+    }
+
+    return res;
+}
+
+template<typename T, typename... Types>
+ByteMessage Serialize(const T& cur_val, const Types...& values){
+    ByteMessage res = Serialize(cur_val);
+    ByteMessage values_s = Serialize(values...);
+    std::copy(values_s.begin(), values_s.end(), back_inserter(res));
+    return res;    
+}
+
+template<typename T>
+void Deserialize(const ByteMessage& msg, T& out_val){
+    if constexpr(std::is_integral<T>::value){
+        if(sizeof(out_val) != msg.size())
+            EXIT_WITH_MSG("Error deserialization");
+
+        for(int i = 0;i < msg.size();i++){
+            out_val |= (msg[i] << (i * sizeof(uint8_t)));            
+        }        
+    }else if constexpr(std::is_same<T, ByteMessage>::value){
+        out_val.resize(msg[0]);
+        out_val.shrink_to_fit();
+        
+        std::copy(.begin(), val.end(), back_inserter(res));
+    }else{
+        ByteMessage inner = val.Serialize();
+        std::copy(inner.begin(), inner.end(), back_inserter(res));
+    }
+}
+
+template<typename INTEGRAL_TYPE>
+void Deserialize(cosnt ByteMessage& msg, INTEGRAL_TYPE* val){
+    std::enable_if_t<std::is_integral<INTEGRAL_TYPE>::value, bool> fict;
+    if(sizeof(INTEGRAL_TYPE) != msg.size())
+        EXIT_WITH_MSG("Error deserialization");
+    
+    *val = 0;
+
+    for(size_t i = 0;i < msg.size();i++){
+        *val |= (msg[i] << (sizeof(INTEGRAL_TYPE) - i - 1) * sizeof(uint8_t));
+    }
 }
