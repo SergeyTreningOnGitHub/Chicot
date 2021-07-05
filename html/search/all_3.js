@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['gen_5fkey_5fparams_6',['gen_key_params',['../classWallet.html#a30a8559e2014f27b9ff8d31e2364f540',1,'Wallet']]],
-  ['gen_5fkeys_7',['gen_keys',['../classWallet.html#a2f8b388622003a8675e06ce394c67339',1,'Wallet']]],
-  ['gendigest_8',['GenDigest',['../crypto_8h.html#aff7d177025bc5de701aacdbdb69c508f',1,'crypto.h']]],
-  ['genkeys_9',['GenKeys',['../classWallet.html#a40dee7618d0a7b01855e536e80e664e7',1,'Wallet']]],
-  ['getcurvenid_10',['GetCurveNid',['../crypto_8h.html#aef18f0d533a69708d9442996301f0d98',1,'crypto.h']]],
-  ['getprivatekey_11',['GetPrivateKey',['../classWallet.html#ae832396ba79f601a1635ddc7d5da85f4',1,'Wallet']]],
-  ['getpublickey_12',['GetPublicKey',['../classWallet.html#a37561a4daafa748451b3afa9833d9e63',1,'Wallet']]]
+  ['b_5f8317e06ccd3002e1_16',['b_8317e06ccd3002e1',['../namespacecapnp_1_1schemas.html#a146490012e52a9a18bff41466ef661b3',1,'capnp::schemas']]],
+  ['b_5fba5a786f3835a571_17',['b_ba5a786f3835a571',['../namespacecapnp_1_1schemas.html#ae5c471cffd520e871a33250bebc90e50',1,'capnp::schemas']]],
+  ['b_5fe5b4b2af066bc8fe_18',['b_e5b4b2af066bc8fe',['../namespacecapnp_1_1schemas.html#a1441d566a4762d6f6e86ec7e26a97235',1,'capnp::schemas']]],
+  ['bp_5f8317e06ccd3002e1_19',['bp_8317e06ccd3002e1',['../namespacecapnp_1_1schemas.html#a5a7d4db1375aa878f072fe459ce19bfe',1,'capnp::schemas']]],
+  ['bp_5fba5a786f3835a571_20',['bp_ba5a786f3835a571',['../namespacecapnp_1_1schemas.html#a85ba4bc9046f04e46069af9d73d208b3',1,'capnp::schemas']]],
+  ['bp_5fe5b4b2af066bc8fe_21',['bp_e5b4b2af066bc8fe',['../namespacecapnp_1_1schemas.html#a578877d673bf1f7dd1914396ae5f0d5e',1,'capnp::schemas']]],
+  ['brand_22',['brand',['../structTransaction_1_1__capnpPrivate.html#a3e732b896a306a42698d72998d202d64',1,'Transaction::_capnpPrivate::brand()'],['../structTransaction_1_1Output_1_1__capnpPrivate.html#a8afa79269503685084703ce59cb2d7a1',1,'Transaction::Output::_capnpPrivate::brand()'],['../structTransaction_1_1Input_1_1__capnpPrivate.html#af2e1d50052e51ad99448eb84a6bc7913',1,'Transaction::Input::_capnpPrivate::brand()']]],
+  ['builder_23',['Builder',['../classTransaction_1_1Output_1_1Builder.html#a6e20a7f052dfe0713b1b1c0a668f7a10',1,'Transaction::Output::Builder::Builder()'],['../classTransaction_1_1Input_1_1Builder.html#a342edc006dc8a3ab40a7316900025dcb',1,'Transaction::Input::Builder::Builder(::capnp::_::StructBuilder base)'],['../classTransaction_1_1Input_1_1Builder.html#a072bba03de8ef4f92824b875ee10c278',1,'Transaction::Input::Builder::Builder(decltype(nullptr))'],['../classTransaction_1_1Input_1_1Builder.html#a73f3a2eb3ed5349e833a0a8b6034dc44',1,'Transaction::Input::Builder::Builder()=delete'],['../classTransaction_1_1Output_1_1Builder.html#a27ced72a2a774b700f957b6f3a5b01d6',1,'Transaction::Output::Builder::Builder(::capnp::_::StructBuilder base)'],['../classTransaction_1_1Output_1_1Builder.html#af452d3452d5c2365c3853c0d2ff432d3',1,'Transaction::Output::Builder::Builder()=delete'],['../classTransaction_1_1Builder.html#aae6e4aa24e69a407b47068af62e2852a',1,'Transaction::Builder::Builder(::capnp::_::StructBuilder base)'],['../classTransaction_1_1Builder.html#ae88d9161ca82e8b81d1eaac457680a36',1,'Transaction::Builder::Builder(decltype(nullptr))'],['../classTransaction_1_1Builder.html#ac8afe72dfd7a7498ea37417a0f7e60b4',1,'Transaction::Builder::Builder()=delete'],['../classTransaction_1_1Builder.html',1,'Transaction::Builder'],['../classTransaction_1_1Input_1_1Builder.html',1,'Transaction::Input::Builder'],['../classTransaction_1_1Output_1_1Builder.html',1,'Transaction::Output::Builder']]],
+  ['builds_24',['Builds',['../classTransaction_1_1Input_1_1Builder.html#aeb4a26bd80dfdf82f14a427507cb7b28',1,'Transaction::Input::Builder::Builds()'],['../classTransaction_1_1Output_1_1Builder.html#a97a6d990aafa65cbedb2ba7cc4d48d84',1,'Transaction::Output::Builder::Builds()'],['../classTransaction_1_1Builder.html#a7a693b633a24a03f1d084b0c482fa607',1,'Transaction::Builder::Builds()']]],
+  ['bytemessage_25',['ByteMessage',['../crypto_8h.html#a07182bcc71bc889490bf23ed33f79774',1,'crypto.h']]]
 ];

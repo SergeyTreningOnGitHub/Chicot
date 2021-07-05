@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['ec_5fkey_5f_2',['ec_key_',['../classWallet.html#a18ca9be3de79beb85262b3e62acdd3d4',1,'Wallet']]],
-  ['ec_5fsign_3',['EC_Sign',['../crypto_8h.html#ab6cbdb4faa35e8df96ba077898fa2fdb',1,'crypto.h']]],
-  ['exit_5fwith_5fmsg_4',['EXIT_WITH_MSG',['../utils_8h.html#adf0e2c4134e4b1ff16204fc4e6eb9604',1,'utils.h']]],
-  ['exitwithmsg_5',['ExitWithMsg',['../utils_8h.html#a9d2887cee11c35151eb85b6f7fd0b1a1',1,'ExitWithMsg(const std::string &amp;msg):&#160;utils.cpp'],['../utils_8cpp.html#a9d2887cee11c35151eb85b6f7fd0b1a1',1,'ExitWithMsg(const std::string &amp;msg):&#160;utils.cpp']]]
+  ['adoptecsign_10',['adoptEcSign',['../classTransaction_1_1Output_1_1Builder.html#a0cb1c7ca61e12541f173e7cd4e3f225a',1,'Transaction::Output::Builder']]],
+  ['adoptinputs_11',['adoptInputs',['../classTransaction_1_1Builder.html#a52611836fd8156ee01f02b2bda10bcce',1,'Transaction::Builder']]],
+  ['adoptoutputs_12',['adoptOutputs',['../classTransaction_1_1Builder.html#afdeacdfdf0ea1ff11a41ee4880043ee6',1,'Transaction::Builder']]],
+  ['adoptprevtxhash_13',['adoptPrevTxHash',['../classTransaction_1_1Output_1_1Builder.html#ac6cbba521ac47369bfd6a07889063dda',1,'Transaction::Output::Builder']]],
+  ['adoptpubkey_14',['adoptPubKey',['../classTransaction_1_1Input_1_1Builder.html#abd17df2c3240d341b81abb29e0e3adba',1,'Transaction::Input::Builder']]],
+  ['asreader_15',['asReader',['../classTransaction_1_1Builder.html#a89097852295bf854128aab9e826bbcf6',1,'Transaction::Builder::asReader()'],['../classTransaction_1_1Output_1_1Builder.html#aff395887c52e86f0a045740c67a22d1e',1,'Transaction::Output::Builder::asReader()'],['../classTransaction_1_1Input_1_1Builder.html#a6baa1479ba6e97bdc2770d67cddb0fbf',1,'Transaction::Input::Builder::asReader()']]]
 ];

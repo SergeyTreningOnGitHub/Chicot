@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['reader_178',['Reader',['../classTransaction_1_1Reader.html#a3a2747555c1cff88a34da1ef1b5d0b90',1,'Transaction::Reader::Reader()=default'],['../classTransaction_1_1Reader.html#aeaef9da66d357a5bbbff0ff1665e0e0e',1,'Transaction::Reader::Reader(::capnp::_::StructReader base)'],['../classTransaction_1_1Output_1_1Reader.html#a36c6bdf9ba1ba2ced55f2dbdda4eca82',1,'Transaction::Output::Reader::Reader()=default'],['../classTransaction_1_1Output_1_1Reader.html#ac6f7ae468919a718debc8fdb3f82a5e3',1,'Transaction::Output::Reader::Reader(::capnp::_::StructReader base)'],['../classTransaction_1_1Input_1_1Reader.html#a8702c243096dba74d96618907fecae50',1,'Transaction::Input::Reader::Reader()=default'],['../classTransaction_1_1Input_1_1Reader.html#a7e0f7fe22bd82b39cc6a9e3b720af1da',1,'Transaction::Input::Reader::Reader(::capnp::_::StructReader base)']]]
+];

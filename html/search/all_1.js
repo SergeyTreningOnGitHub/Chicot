@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['crypto_2eh_1',['crypto.h',['../crypto_8h.html',1,'']]]
+  ['_5fbuilder_6',['_builder',['../classTransaction_1_1Builder.html#a97efeec21804d03c25a8bb3f3b8354a4',1,'Transaction::Builder::_builder()'],['../classTransaction_1_1Output_1_1Builder.html#a7d5fa5cfa1cc4df6bb528edc24e0622e',1,'Transaction::Output::Builder::_builder()'],['../classTransaction_1_1Input_1_1Builder.html#afc20c5348b2368d2f38db13ad471ba5c',1,'Transaction::Input::Builder::_builder()']]],
+  ['_5fcapnpprivate_7',['_capnpPrivate',['../structTransaction_1_1__capnpPrivate.html',1,'Transaction::_capnpPrivate'],['../structTransaction_1_1Input_1_1__capnpPrivate.html',1,'Transaction::Input::_capnpPrivate'],['../structTransaction_1_1Output_1_1__capnpPrivate.html',1,'Transaction::Output::_capnpPrivate']]],
+  ['_5freader_8',['_reader',['../classTransaction_1_1Reader.html#a5669b091a471966349c6fca68cef9934',1,'Transaction::Reader::_reader()'],['../classTransaction_1_1Output_1_1Reader.html#a5db6b56063594b781e31d8a254c03e6e',1,'Transaction::Output::Reader::_reader()'],['../classTransaction_1_1Input_1_1Reader.html#a1dfe45a89d43feb0bda45a2e81b61afa',1,'Transaction::Input::Reader::_reader()']]],
+  ['_5ftypeless_9',['_typeless',['../classTransaction_1_1Pipeline.html#a9ec009ab3ec7c10abed59c33e967d456',1,'Transaction::Pipeline::_typeless()'],['../classTransaction_1_1Output_1_1Pipeline.html#a3398d053f296ca0334c1f15368b74721',1,'Transaction::Output::Pipeline::_typeless()'],['../classTransaction_1_1Input_1_1Pipeline.html#a4770995efcdf4e589140562e8700b260',1,'Transaction::Input::Pipeline::_typeless()']]]
 ];

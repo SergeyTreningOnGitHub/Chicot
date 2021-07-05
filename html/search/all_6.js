@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['params_5f_16',['params_',['../classWallet.html#a08147ca018252d8e568cdffb8e572fee',1,'Wallet']]],
-  ['printvector_17',['PrintVector',['../main_8cpp.html#a17b777238f452913bc659ae1bc68e8c0',1,'main.cpp']]],
-  ['privatekey_18',['PrivateKey',['../crypto_8h.html#a45665451c99d76f9d9f638f3fe36d7b8',1,'crypto.h']]],
-  ['publickey_19',['PublicKey',['../crypto_8h.html#a06fd7b9f6ff0e20ff3bf7bb623d8aa49',1,'crypto.h']]]
+  ['ec_5fkey_5f_36',['ec_key_',['../classWallet.html#a18ca9be3de79beb85262b3e62acdd3d4',1,'Wallet']]],
+  ['ec_5fsign_37',['EC_Sign',['../crypto_8h.html#ab6cbdb4faa35e8df96ba077898fa2fdb',1,'crypto.h']]],
+  ['exit_5fwith_5fmsg_38',['EXIT_WITH_MSG',['../utils_8h.html#adf0e2c4134e4b1ff16204fc4e6eb9604',1,'utils.h']]],
+  ['exitwithmsg_39',['ExitWithMsg',['../utils_8h.html#a9d2887cee11c35151eb85b6f7fd0b1a1',1,'ExitWithMsg(const std::string &amp;msg):&#160;utils.cpp'],['../utils_8cpp.html#a9d2887cee11c35151eb85b6f7fd0b1a1',1,'ExitWithMsg(const std::string &amp;msg):&#160;utils.cpp']]]
 ];

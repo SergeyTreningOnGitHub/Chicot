@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7ewallet_53',['~Wallet',['../classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde',1,'Wallet']]]
+  ['loadprivate_172',['LoadPrivate',['../classWallet.html#a8a3b7988e4aeee57816ea35b1d90ec55',1,'Wallet']]]
 ];
