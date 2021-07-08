@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['i_5f8317e06ccd3002e1_59',['i_8317e06ccd3002e1',['../namespacecapnp_1_1schemas.html#a939fff555e9e70b10f6aff3d8f39a1bd',1,'capnp::schemas']]],
-  ['i_5fba5a786f3835a571_60',['i_ba5a786f3835a571',['../namespacecapnp_1_1schemas.html#aa22832435c1f06364a266d267b321953',1,'capnp::schemas']]],
-  ['i_5fe5b4b2af066bc8fe_61',['i_e5b4b2af066bc8fe',['../namespacecapnp_1_1schemas.html#a8ffdcecfbeccace6110d202dc5d7b595',1,'capnp::schemas']]],
-  ['initecsign_62',['initEcSign',['../classTransaction_1_1Output_1_1Builder.html#a17ee506254262f3257f9e576a90c81b6',1,'Transaction::Output::Builder']]],
-  ['initinputs_63',['initInputs',['../classTransaction_1_1Builder.html#a9ec2bfbbb25d52ed178bb2858532c665',1,'Transaction::Builder']]],
-  ['initoutputs_64',['initOutputs',['../classTransaction_1_1Builder.html#a62ae0ce031dcf7c0db7ac9f82494b998',1,'Transaction::Builder']]],
-  ['initprevtxhash_65',['initPrevTxHash',['../classTransaction_1_1Output_1_1Builder.html#aeb5fb131b3755568975b6a5c9087cdcd',1,'Transaction::Output::Builder']]],
-  ['initpubkey_66',['initPubKey',['../classTransaction_1_1Input_1_1Builder.html#a7d84ef4bd4454dcedfe48d222515dbaf',1,'Transaction::Input::Builder']]],
-  ['input_67',['Input',['../structTransaction_1_1Input.html#a1697e77a57f77a9a14db6ab59a65ff86',1,'Transaction::Input::Input()'],['../structTransaction_1_1Input.html',1,'Transaction::Input']]]
+  ['i_5f85593a3f6a09e2e0_66',['i_85593a3f6a09e2e0',['../namespacecapnp_1_1schemas.html#ae72690b09db736c24496bfbaf9aca2d7',1,'capnp::schemas']]],
+  ['i_5fa0e6a4aa33384046_67',['i_a0e6a4aa33384046',['../namespacecapnp_1_1schemas.html#ac09fe0dc49a190fbeb00fb0ae0636af4',1,'capnp::schemas']]],
+  ['i_5fc7c05cd4e4343fdf_68',['i_c7c05cd4e4343fdf',['../namespacecapnp_1_1schemas.html#a76fddf4a2721b82890895d0feb7052ff',1,'capnp::schemas']]],
+  ['initecsign_69',['initEcSign',['../classTransactData_1_1Builder.html#acf302cf4614ae16304abe2e98879d7e5',1,'TransactData::Builder']]],
+  ['initinputs_70',['initInputs',['../classTransactData_1_1Builder.html#acde4d4b9be19353e8906fd9599d1317a',1,'TransactData::Builder']]],
+  ['initoutputs_71',['initOutputs',['../classTransactData_1_1Builder.html#a57c380a448e18e168d77bf9b70f1cf50',1,'TransactData::Builder']]],
+  ['initprevtxhash_72',['initPrevTxHash',['../classTransactData_1_1InputData_1_1Builder.html#a536b180caa8444ec5311c73cf3f5f189',1,'TransactData::InputData::Builder']]],
+  ['initpubkey_73',['initPubKey',['../classTransactData_1_1OutputData_1_1Builder.html#aab9521ec2b83831aa65fbfc9e502452a',1,'TransactData::OutputData::Builder']]],
+  ['input_74',['Input',['../structTransaction_1_1Input.html',1,'Transaction']]],
+  ['inputdata_75',['InputData',['../structTransactData_1_1InputData.html#a914f39edef72f3d7af57d5e8785c4d9a',1,'TransactData::InputData::InputData()'],['../structTransactData_1_1InputData.html',1,'TransactData::InputData']]],
+  ['inputs_5f_76',['inputs_',['../classTransaction.html#a28ef1a83c0288e369f6c528bb1fc720b',1,'Transaction']]]
 ];

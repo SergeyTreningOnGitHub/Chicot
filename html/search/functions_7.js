@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['initecsign_166',['initEcSign',['../classTransaction_1_1Output_1_1Builder.html#a17ee506254262f3257f9e576a90c81b6',1,'Transaction::Output::Builder']]],
-  ['initinputs_167',['initInputs',['../classTransaction_1_1Builder.html#a9ec2bfbbb25d52ed178bb2858532c665',1,'Transaction::Builder']]],
-  ['initoutputs_168',['initOutputs',['../classTransaction_1_1Builder.html#a62ae0ce031dcf7c0db7ac9f82494b998',1,'Transaction::Builder']]],
-  ['initprevtxhash_169',['initPrevTxHash',['../classTransaction_1_1Output_1_1Builder.html#aeb5fb131b3755568975b6a5c9087cdcd',1,'Transaction::Output::Builder']]],
-  ['initpubkey_170',['initPubKey',['../classTransaction_1_1Input_1_1Builder.html#a7d84ef4bd4454dcedfe48d222515dbaf',1,'Transaction::Input::Builder']]],
-  ['input_171',['Input',['../structTransaction_1_1Input.html#a1697e77a57f77a9a14db6ab59a65ff86',1,'Transaction::Input']]]
+  ['initecsign_193',['initEcSign',['../classTransactData_1_1Builder.html#acf302cf4614ae16304abe2e98879d7e5',1,'TransactData::Builder']]],
+  ['initinputs_194',['initInputs',['../classTransactData_1_1Builder.html#acde4d4b9be19353e8906fd9599d1317a',1,'TransactData::Builder']]],
+  ['initoutputs_195',['initOutputs',['../classTransactData_1_1Builder.html#a57c380a448e18e168d77bf9b70f1cf50',1,'TransactData::Builder']]],
+  ['initprevtxhash_196',['initPrevTxHash',['../classTransactData_1_1InputData_1_1Builder.html#a536b180caa8444ec5311c73cf3f5f189',1,'TransactData::InputData::Builder']]],
+  ['initpubkey_197',['initPubKey',['../classTransactData_1_1OutputData_1_1Builder.html#aab9521ec2b83831aa65fbfc9e502452a',1,'TransactData::OutputData::Builder']]],
+  ['inputdata_198',['InputData',['../structTransactData_1_1InputData.html#a914f39edef72f3d7af57d5e8785c4d9a',1,'TransactData::InputData']]]
 ];

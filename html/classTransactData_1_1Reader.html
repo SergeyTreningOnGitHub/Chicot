@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Command parser: Transaction::Reader Class Reference</title>
+<title>Command parser: TransactData::Reader Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="structTransaction.html">Transaction</a></li><li class="navelem"><a class="el" href="classTransaction_1_1Reader.html">Reader</a></li>  </ul>
+<li class="navelem"><a class="el" href="structTransactData.html">TransactData</a></li><li class="navelem"><a class="el" href="classTransactData_1_1Reader.html">Reader</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,9 +71,9 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
-<a href="classTransaction_1_1Reader-members.html">List of all members</a>  </div>
+<a href="classTransactData_1_1Reader-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Transaction::Reader Class Reference</div>  </div>
+<div class="title">TransactData::Reader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -81,58 +81,62 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3ab74ae8168a106045d3340a27329a63"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structTransaction.html">Transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a3ab74ae8168a106045d3340a27329a63">Reads</a></td></tr>
-<tr class="separator:a3ab74ae8168a106045d3340a27329a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2f7b9e1bfca3ad68194a3ec28e6ebf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structTransactData.html">TransactData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#adb2f7b9e1bfca3ad68194a3ec28e6ebf">Reads</a></td></tr>
+<tr class="separator:adb2f7b9e1bfca3ad68194a3ec28e6ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3a2747555c1cff88a34da1ef1b5d0b90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a3a2747555c1cff88a34da1ef1b5d0b90">Reader</a> ()=default</td></tr>
-<tr class="separator:a3a2747555c1cff88a34da1ef1b5d0b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaef9da66d357a5bbbff0ff1665e0e0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#aeaef9da66d357a5bbbff0ff1665e0e0e">Reader</a> (::capnp::_::StructReader base)</td></tr>
-<tr class="separator:aeaef9da66d357a5bbbff0ff1665e0e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef75af7e0902c071c4cef85055b8b39"><td class="memItemLeft" align="right" valign="top">inline ::capnp::MessageSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#aeef75af7e0902c071c4cef85055b8b39">totalSize</a> () const</td></tr>
-<tr class="separator:aeef75af7e0902c071c4cef85055b8b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f90c06ca23a142a2facc1b8b736bb7"><td class="memItemLeft" align="right" valign="top">inline ::kj::StringTree&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a55f90c06ca23a142a2facc1b8b736bb7">toString</a> () const</td></tr>
-<tr class="separator:a55f90c06ca23a142a2facc1b8b736bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e84c7cc4d90c206df6ec7539480b3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#ae5e84c7cc4d90c206df6ec7539480b3b">hasOutputs</a> () const</td></tr>
-<tr class="separator:ae5e84c7cc4d90c206df6ec7539480b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a8140820974363be821434068177ea"><td class="memItemLeft" align="right" valign="top">inline ::capnp::List&lt; ::<a class="el" href="structTransaction_1_1Output.html">Transaction::Output</a>, ::capnp::Kind::STRUCT &gt;::<a class="el" href="classTransaction_1_1Reader.html">Reader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a80a8140820974363be821434068177ea">getOutputs</a> () const</td></tr>
-<tr class="separator:a80a8140820974363be821434068177ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd5f999d33ba870e3244622fa415e82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a9dd5f999d33ba870e3244622fa415e82">hasInputs</a> () const</td></tr>
-<tr class="separator:a9dd5f999d33ba870e3244622fa415e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51fe5172deca3d7431b355fd06df7e70"><td class="memItemLeft" align="right" valign="top">inline ::capnp::List&lt; ::<a class="el" href="structTransaction_1_1Input.html">Transaction::Input</a>, ::capnp::Kind::STRUCT &gt;::<a class="el" href="classTransaction_1_1Reader.html">Reader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a51fe5172deca3d7431b355fd06df7e70">getInputs</a> () const</td></tr>
-<tr class="separator:a51fe5172deca3d7431b355fd06df7e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c96738c86e6b1b67f679d4b934c1a23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a5c96738c86e6b1b67f679d4b934c1a23">Reader</a> ()=default</td></tr>
+<tr class="separator:a5c96738c86e6b1b67f679d4b934c1a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93ee0abce93b8274a2dee0be8618423"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#ab93ee0abce93b8274a2dee0be8618423">Reader</a> (::capnp::_::StructReader base)</td></tr>
+<tr class="separator:ab93ee0abce93b8274a2dee0be8618423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e2753269f6cf99ce53aeff16362077"><td class="memItemLeft" align="right" valign="top">inline ::capnp::MessageSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a81e2753269f6cf99ce53aeff16362077">totalSize</a> () const</td></tr>
+<tr class="separator:a81e2753269f6cf99ce53aeff16362077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998578c825b75f53ef4ff3dab2805be6"><td class="memItemLeft" align="right" valign="top">inline ::kj::StringTree&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a998578c825b75f53ef4ff3dab2805be6">toString</a> () const</td></tr>
+<tr class="separator:a998578c825b75f53ef4ff3dab2805be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9911a69b3822b0f9f0dd8c1320c7120"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#ab9911a69b3822b0f9f0dd8c1320c7120">hasOutputs</a> () const</td></tr>
+<tr class="separator:ab9911a69b3822b0f9f0dd8c1320c7120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c491f146bb61693fb66a8bdc9148347"><td class="memItemLeft" align="right" valign="top">inline ::capnp::List&lt; ::<a class="el" href="structTransactData_1_1OutputData.html">TransactData::OutputData</a>, ::capnp::Kind::STRUCT &gt;::<a class="el" href="classTransactData_1_1Reader.html">Reader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a2c491f146bb61693fb66a8bdc9148347">getOutputs</a> () const</td></tr>
+<tr class="separator:a2c491f146bb61693fb66a8bdc9148347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514b5a9c5f4bb03cfa5c8f6d661120c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a514b5a9c5f4bb03cfa5c8f6d661120c7">hasInputs</a> () const</td></tr>
+<tr class="separator:a514b5a9c5f4bb03cfa5c8f6d661120c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305b87385d9a3c8dbd67de41d8a9b4da"><td class="memItemLeft" align="right" valign="top">inline ::capnp::List&lt; ::<a class="el" href="structTransactData_1_1InputData.html">TransactData::InputData</a>, ::capnp::Kind::STRUCT &gt;::<a class="el" href="classTransactData_1_1Reader.html">Reader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a305b87385d9a3c8dbd67de41d8a9b4da">getInputs</a> () const</td></tr>
+<tr class="separator:a305b87385d9a3c8dbd67de41d8a9b4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18dd63d29f8ea05c01a7112ac2a07900"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a18dd63d29f8ea05c01a7112ac2a07900">hasEcSign</a> () const</td></tr>
+<tr class="separator:a18dd63d29f8ea05c01a7112ac2a07900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a306db99e699480b32af48457ea3054c3"><td class="memItemLeft" align="right" valign="top">inline ::capnp::Data::Reader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a306db99e699480b32af48457ea3054c3">getEcSign</a> () const</td></tr>
+<tr class="separator:a306db99e699480b32af48457ea3054c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5669b091a471966349c6fca68cef9934"><td class="memItemLeft" align="right" valign="top">::capnp::_::StructReader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a5669b091a471966349c6fca68cef9934">_reader</a></td></tr>
-<tr class="separator:a5669b091a471966349c6fca68cef9934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5ff81c84bc644c7b852cf0b7a53b87"><td class="memItemLeft" align="right" valign="top">::capnp::_::StructReader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#abf5ff81c84bc644c7b852cf0b7a53b87">_reader</a></td></tr>
+<tr class="separator:abf5ff81c84bc644c7b852cf0b7a53b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a3a35f300ad23a4a9e0b6a7f45e0b69e1"><td class="memTemplParams" colspan="2">template&lt;typename , ::capnp::Kind &gt; </td></tr>
-<tr class="memitem:a3a35f300ad23a4a9e0b6a7f45e0b69e1"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a3a35f300ad23a4a9e0b6a7f45e0b69e1">::capnp::ToDynamic_</a></td></tr>
+<tr class="memitem:a3a35f300ad23a4a9e0b6a7f45e0b69e1"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a3a35f300ad23a4a9e0b6a7f45e0b69e1">::capnp::ToDynamic_</a></td></tr>
 <tr class="separator:a3a35f300ad23a4a9e0b6a7f45e0b69e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8986ddbe029dfc5d7ae773d75ad16e97"><td class="memTemplParams" colspan="2">template&lt;typename , ::capnp::Kind &gt; </td></tr>
-<tr class="memitem:a8986ddbe029dfc5d7ae773d75ad16e97"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a8986ddbe029dfc5d7ae773d75ad16e97">::capnp::_::PointerHelpers</a></td></tr>
+<tr class="memitem:a8986ddbe029dfc5d7ae773d75ad16e97"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a8986ddbe029dfc5d7ae773d75ad16e97">::capnp::_::PointerHelpers</a></td></tr>
 <tr class="separator:a8986ddbe029dfc5d7ae773d75ad16e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70c0ef08ec0a6ab682de5af8c88b8767"><td class="memTemplParams" colspan="2">template&lt;typename , ::capnp::Kind &gt; </td></tr>
-<tr class="memitem:a70c0ef08ec0a6ab682de5af8c88b8767"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a70c0ef08ec0a6ab682de5af8c88b8767">::capnp::List</a></td></tr>
+<tr class="memitem:a70c0ef08ec0a6ab682de5af8c88b8767"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a70c0ef08ec0a6ab682de5af8c88b8767">::capnp::List</a></td></tr>
 <tr class="separator:a70c0ef08ec0a6ab682de5af8c88b8767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4d8be7e43351e6a5569a7a921b0413"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a7e4d8be7e43351e6a5569a7a921b0413">::capnp::MessageBuilder</a></td></tr>
+<tr class="memitem:a7e4d8be7e43351e6a5569a7a921b0413"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a7e4d8be7e43351e6a5569a7a921b0413">::capnp::MessageBuilder</a></td></tr>
 <tr class="separator:a7e4d8be7e43351e6a5569a7a921b0413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a503974144edeb2f940e0bcd8dcc0c8f2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction_1_1Reader.html#a503974144edeb2f940e0bcd8dcc0c8f2">::capnp::Orphanage</a></td></tr>
+<tr class="memitem:a503974144edeb2f940e0bcd8dcc0c8f2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactData_1_1Reader.html#a503974144edeb2f940e0bcd8dcc0c8f2">::capnp::Orphanage</a></td></tr>
 <tr class="separator:a503974144edeb2f940e0bcd8dcc0c8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a3ab74ae8168a106045d3340a27329a63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ab74ae8168a106045d3340a27329a63">&#9670;&nbsp;</a></span>Reads</h2>
+<a id="adb2f7b9e1bfca3ad68194a3ec28e6ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb2f7b9e1bfca3ad68194a3ec28e6ebf">&#9670;&nbsp;</a></span>Reads</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structTransaction.html">Transaction</a> <a class="el" href="classTransaction_1_1Reader.html#a3ab74ae8168a106045d3340a27329a63">Transaction::Reader::Reads</a></td>
+          <td class="memname">typedef <a class="el" href="structTransactData.html">TransactData</a> <a class="el" href="classTransactData_1_1Reader.html#adb2f7b9e1bfca3ad68194a3ec28e6ebf">TransactData::Reader::Reads</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -140,8 +144,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3a2747555c1cff88a34da1ef1b5d0b90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a2747555c1cff88a34da1ef1b5d0b90">&#9670;&nbsp;</a></span>Reader() <span class="overload">[1/2]</span></h2>
+<a id="a5c96738c86e6b1b67f679d4b934c1a23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c96738c86e6b1b67f679d4b934c1a23">&#9670;&nbsp;</a></span>Reader() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +154,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Transaction::Reader::Reader </td>
+          <td class="memname">TransactData::Reader::Reader </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -165,8 +169,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="aeaef9da66d357a5bbbff0ff1665e0e0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeaef9da66d357a5bbbff0ff1665e0e0e">&#9670;&nbsp;</a></span>Reader() <span class="overload">[2/2]</span></h2>
+<a id="ab93ee0abce93b8274a2dee0be8618423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93ee0abce93b8274a2dee0be8618423">&#9670;&nbsp;</a></span>Reader() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +179,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Transaction::Reader::Reader </td>
+          <td class="memname">TransactData::Reader::Reader </td>
           <td>(</td>
           <td class="paramtype">::capnp::_::StructReader&#160;</td>
           <td class="paramname"><em>base</em></td><td>)</td>
@@ -192,8 +196,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a51fe5172deca3d7431b355fd06df7e70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51fe5172deca3d7431b355fd06df7e70">&#9670;&nbsp;</a></span>getInputs()</h2>
+<a id="a306db99e699480b32af48457ea3054c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a306db99e699480b32af48457ea3054c3">&#9670;&nbsp;</a></span>getEcSign()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +206,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">capnp::List&lt;::<a class="el" href="structTransaction_1_1Input.html">Transaction::Input</a>,::capnp::Kind::STRUCT &gt;::<a class="el" href="classTransaction_1_1Reader.html">Reader</a> Transaction::Reader::getInputs </td>
+          <td class="memname">capnp::Data::Reader TransactData::Reader::getEcSign </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -217,8 +221,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a80a8140820974363be821434068177ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80a8140820974363be821434068177ea">&#9670;&nbsp;</a></span>getOutputs()</h2>
+<a id="a305b87385d9a3c8dbd67de41d8a9b4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a305b87385d9a3c8dbd67de41d8a9b4da">&#9670;&nbsp;</a></span>getInputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +231,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">capnp::List&lt;::<a class="el" href="structTransaction_1_1Output.html">Transaction::Output</a>,::capnp::Kind::STRUCT &gt;::<a class="el" href="classTransaction_1_1Reader.html">Reader</a> Transaction::Reader::getOutputs </td>
+          <td class="memname">capnp::List&lt;::<a class="el" href="structTransactData_1_1InputData.html">TransactData::InputData</a>,::capnp::Kind::STRUCT &gt;::<a class="el" href="classTransactData_1_1Reader.html">Reader</a> TransactData::Reader::getInputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -242,8 +246,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a9dd5f999d33ba870e3244622fa415e82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dd5f999d33ba870e3244622fa415e82">&#9670;&nbsp;</a></span>hasInputs()</h2>
+<a id="a2c491f146bb61693fb66a8bdc9148347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c491f146bb61693fb66a8bdc9148347">&#9670;&nbsp;</a></span>getOutputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +256,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Transaction::Reader::hasInputs </td>
+          <td class="memname">capnp::List&lt;::<a class="el" href="structTransactData_1_1OutputData.html">TransactData::OutputData</a>,::capnp::Kind::STRUCT &gt;::<a class="el" href="classTransactData_1_1Reader.html">Reader</a> TransactData::Reader::getOutputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -267,8 +271,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ae5e84c7cc4d90c206df6ec7539480b3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5e84c7cc4d90c206df6ec7539480b3b">&#9670;&nbsp;</a></span>hasOutputs()</h2>
+<a id="a18dd63d29f8ea05c01a7112ac2a07900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18dd63d29f8ea05c01a7112ac2a07900">&#9670;&nbsp;</a></span>hasEcSign()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +281,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Transaction::Reader::hasOutputs </td>
+          <td class="memname">bool TransactData::Reader::hasEcSign </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -292,8 +296,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a55f90c06ca23a142a2facc1b8b736bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55f90c06ca23a142a2facc1b8b736bb7">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="a514b5a9c5f4bb03cfa5c8f6d661120c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514b5a9c5f4bb03cfa5c8f6d661120c7">&#9670;&nbsp;</a></span>hasInputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +306,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">inline ::kj::StringTree Transaction::Reader::toString </td>
+          <td class="memname">bool TransactData::Reader::hasInputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -317,8 +321,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="aeef75af7e0902c071c4cef85055b8b39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeef75af7e0902c071c4cef85055b8b39">&#9670;&nbsp;</a></span>totalSize()</h2>
+<a id="ab9911a69b3822b0f9f0dd8c1320c7120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9911a69b3822b0f9f0dd8c1320c7120">&#9670;&nbsp;</a></span>hasOutputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +331,57 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">inline ::capnp::MessageSize Transaction::Reader::totalSize </td>
+          <td class="memname">bool TransactData::Reader::hasOutputs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a998578c825b75f53ef4ff3dab2805be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998578c825b75f53ef4ff3dab2805be6">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">inline ::kj::StringTree TransactData::Reader::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81e2753269f6cf99ce53aeff16362077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e2753269f6cf99ce53aeff16362077">&#9670;&nbsp;</a></span>totalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">inline ::capnp::MessageSize TransactData::Reader::totalSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -460,8 +514,8 @@ template&lt;typename , ::capnp::Kind &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5669b091a471966349c6fca68cef9934"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5669b091a471966349c6fca68cef9934">&#9670;&nbsp;</a></span>_reader</h2>
+<a id="abf5ff81c84bc644c7b852cf0b7a53b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5ff81c84bc644c7b852cf0b7a53b87">&#9670;&nbsp;</a></span>_reader</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,7 +524,7 @@ template&lt;typename , ::capnp::Kind &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">::capnp::_::StructReader Transaction::Reader::_reader</td>
+          <td class="memname">::capnp::_::StructReader TransactData::Reader::_reader</td>
         </tr>
       </table>
   </td>

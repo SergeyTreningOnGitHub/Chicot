@@ -1,17 +1,19 @@
 var searchData=
 [
-  ['gen_5fkey_5fparams_147',['gen_key_params',['../classWallet.html#a30a8559e2014f27b9ff8d31e2364f540',1,'Wallet']]],
-  ['gen_5fkeys_148',['gen_keys',['../classWallet.html#a2f8b388622003a8675e06ce394c67339',1,'Wallet']]],
-  ['gendigest_149',['GenDigest',['../crypto_8h.html#aff7d177025bc5de701aacdbdb69c508f',1,'crypto.h']]],
-  ['genkeys_150',['GenKeys',['../classWallet.html#a40dee7618d0a7b01855e536e80e664e7',1,'Wallet']]],
-  ['getcurvenid_151',['GetCurveNid',['../crypto_8h.html#aef18f0d533a69708d9442996301f0d98',1,'crypto.h']]],
-  ['getecsign_152',['getEcSign',['../classTransaction_1_1Output_1_1Builder.html#ab961a19763bee8f4ca37eecde1931b29',1,'Transaction::Output::Builder::getEcSign()'],['../classTransaction_1_1Output_1_1Reader.html#abc4c767f317ae1967725b0f743ac67f0',1,'Transaction::Output::Reader::getEcSign()']]],
-  ['getinputs_153',['getInputs',['../classTransaction_1_1Reader.html#a51fe5172deca3d7431b355fd06df7e70',1,'Transaction::Reader::getInputs()'],['../classTransaction_1_1Builder.html#aebc6464fda15416401e56d0f53e34241',1,'Transaction::Builder::getInputs()']]],
-  ['getoutidx_154',['getOutIdx',['../classTransaction_1_1Output_1_1Reader.html#a3e0655a42b635c5a2ec0a3916f925421',1,'Transaction::Output::Reader::getOutIdx()'],['../classTransaction_1_1Output_1_1Builder.html#ae92eac78a97be1fd4a50676f2fa46bc5',1,'Transaction::Output::Builder::getOutIdx()']]],
-  ['getoutputs_155',['getOutputs',['../classTransaction_1_1Reader.html#a80a8140820974363be821434068177ea',1,'Transaction::Reader::getOutputs()'],['../classTransaction_1_1Builder.html#a6200ced8888c07da20c33b03453fe25f',1,'Transaction::Builder::getOutputs()']]],
-  ['getprevtxhash_156',['getPrevTxHash',['../classTransaction_1_1Output_1_1Reader.html#aa12a243c4aa9795548cdc27f2adb7ac1',1,'Transaction::Output::Reader::getPrevTxHash()'],['../classTransaction_1_1Output_1_1Builder.html#aec5970f18f96499b34d30b438e4ce571',1,'Transaction::Output::Builder::getPrevTxHash()']]],
-  ['getprivatekey_157',['GetPrivateKey',['../classWallet.html#ae832396ba79f601a1635ddc7d5da85f4',1,'Wallet']]],
-  ['getpubkey_158',['getPubKey',['../classTransaction_1_1Input_1_1Reader.html#a3cf5efb652d1414efef853f0cb12ce0f',1,'Transaction::Input::Reader::getPubKey()'],['../classTransaction_1_1Input_1_1Builder.html#a7caf0f5312fd6d3a0b3cdb4dbcedb69d',1,'Transaction::Input::Builder::getPubKey()']]],
-  ['getpublickey_159',['GetPublicKey',['../classWallet.html#a37561a4daafa748451b3afa9833d9e63',1,'Wallet']]],
-  ['getvalue_160',['getValue',['../classTransaction_1_1Input_1_1Reader.html#ad8600192bfcba91c747c179326e1294f',1,'Transaction::Input::Reader::getValue()'],['../classTransaction_1_1Input_1_1Builder.html#a32064e3a980cd6697dedf68088a638a1',1,'Transaction::Input::Builder::getValue()']]]
+  ['gen_5fkey_5fparams_171',['gen_key_params',['../classWallet.html#a30a8559e2014f27b9ff8d31e2364f540',1,'Wallet']]],
+  ['gen_5fkeys_172',['gen_keys',['../classWallet.html#a2f8b388622003a8675e06ce394c67339',1,'Wallet']]],
+  ['gendigest_173',['GenDigest',['../crypto_8h.html#aff7d177025bc5de701aacdbdb69c508f',1,'crypto.h']]],
+  ['genkeys_174',['GenKeys',['../classWallet.html#a40dee7618d0a7b01855e536e80e664e7',1,'Wallet']]],
+  ['getcurvenid_175',['GetCurveNid',['../crypto_8h.html#aef18f0d533a69708d9442996301f0d98',1,'crypto.h']]],
+  ['getecsign_176',['getEcSign',['../classTransactData_1_1Reader.html#a306db99e699480b32af48457ea3054c3',1,'TransactData::Reader::getEcSign()'],['../classTransactData_1_1Builder.html#a3f5f0496308384f04ce4e233581d013a',1,'TransactData::Builder::getEcSign()']]],
+  ['getinput_177',['GetInput',['../classTransaction.html#a1ce3748e70f0edb7b595cb1b433ec732',1,'Transaction']]],
+  ['getinputs_178',['getInputs',['../classTransactData_1_1Reader.html#a305b87385d9a3c8dbd67de41d8a9b4da',1,'TransactData::Reader::getInputs()'],['../classTransactData_1_1Builder.html#a1716eeb6d92c0ebcbf7c187f0674b748',1,'TransactData::Builder::getInputs()']]],
+  ['getoutidx_179',['getOutIdx',['../classTransactData_1_1InputData_1_1Builder.html#a2c32089d3812933a1e5824b0fc07808f',1,'TransactData::InputData::Builder::getOutIdx()'],['../classTransactData_1_1InputData_1_1Reader.html#ab33dfe7936357b4cb143bea311e4d1e7',1,'TransactData::InputData::Reader::getOutIdx()']]],
+  ['getoutput_180',['GetOutput',['../classTransaction.html#a2e0e6ed536436c8f402066649880703b',1,'Transaction']]],
+  ['getoutputs_181',['getOutputs',['../classTransactData_1_1Reader.html#a2c491f146bb61693fb66a8bdc9148347',1,'TransactData::Reader::getOutputs()'],['../classTransactData_1_1Builder.html#a954b80ed2944fd5f30fb39834889aa71',1,'TransactData::Builder::getOutputs()']]],
+  ['getprevtxhash_182',['getPrevTxHash',['../classTransactData_1_1InputData_1_1Reader.html#a66c1a861890f8ff779ee9fd93f7d7281',1,'TransactData::InputData::Reader::getPrevTxHash()'],['../classTransactData_1_1InputData_1_1Builder.html#a2a4f63e933d19774c0ef0966509c4898',1,'TransactData::InputData::Builder::getPrevTxHash()']]],
+  ['getprivatekey_183',['GetPrivateKey',['../classWallet.html#ae832396ba79f601a1635ddc7d5da85f4',1,'Wallet']]],
+  ['getpubkey_184',['getPubKey',['../classTransactData_1_1OutputData_1_1Reader.html#ad9452d68d6131a224f0ea7871269df28',1,'TransactData::OutputData::Reader::getPubKey()'],['../classTransactData_1_1OutputData_1_1Builder.html#a8b9bc1df33deeb7d9dc632bd244713d3',1,'TransactData::OutputData::Builder::getPubKey()']]],
+  ['getpublickey_185',['GetPublicKey',['../classWallet.html#a37561a4daafa748451b3afa9833d9e63',1,'Wallet']]],
+  ['getvalue_186',['getValue',['../classTransactData_1_1OutputData_1_1Reader.html#a0a7aa4e77bfcbf062cbda9b5057f753e',1,'TransactData::OutputData::Reader::getValue()'],['../classTransactData_1_1OutputData_1_1Builder.html#a14cce69e14ec93f9b5d09e136eeaccc1',1,'TransactData::OutputData::Builder::getValue()']]]
 ];

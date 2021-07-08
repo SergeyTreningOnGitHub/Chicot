@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wallet_119',['Wallet',['../classWallet.html',1,'']]]
+  ['wallet_140',['Wallet',['../classWallet.html',1,'']]]
 ];

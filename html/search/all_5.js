@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['d_5fe5b4b2af066bc8fe_30',['d_e5b4b2af066bc8fe',['../namespacecapnp_1_1schemas.html#a66fdd3ee0c4866db2fbae27f35f91c74',1,'capnp::schemas']]],
-  ['disownecsign_31',['disownEcSign',['../classTransaction_1_1Output_1_1Builder.html#a11ed48b36b44698a37d24c3cec12c830',1,'Transaction::Output::Builder']]],
-  ['disowninputs_32',['disownInputs',['../classTransaction_1_1Builder.html#afbf846b5c6887ede1c7a0f31694a3c28',1,'Transaction::Builder']]],
-  ['disownoutputs_33',['disownOutputs',['../classTransaction_1_1Builder.html#a67872d116d0ff6a1ac1bc1e734b7076d',1,'Transaction::Builder']]],
-  ['disownprevtxhash_34',['disownPrevTxHash',['../classTransaction_1_1Output_1_1Builder.html#a5d2e076afc40fec328fc6ccc624a222b',1,'Transaction::Output::Builder']]],
-  ['disownpubkey_35',['disownPubKey',['../classTransaction_1_1Input_1_1Builder.html#a7bfd33b656ca0b8366b779e70a2a15f0',1,'Transaction::Input::Builder']]]
+  ['d_5fc7c05cd4e4343fdf_32',['d_c7c05cd4e4343fdf',['../namespacecapnp_1_1schemas.html#a59e6c2380bfa73cacacbb2be97391538',1,'capnp::schemas']]],
+  ['deserialize_33',['Deserialize',['../classTransaction.html#af12d5a671c730176cf7990f65fcf8bfd',1,'Transaction']]],
+  ['disownecsign_34',['disownEcSign',['../classTransactData_1_1Builder.html#ae0e2fea1bb747ce5d39a59162a8d1660',1,'TransactData::Builder']]],
+  ['disowninputs_35',['disownInputs',['../classTransactData_1_1Builder.html#a67e70cb632fa7ed9aaae8fea03e62441',1,'TransactData::Builder']]],
+  ['disownoutputs_36',['disownOutputs',['../classTransactData_1_1Builder.html#a20c93f3f82d96c7fdd3d20f15782fecc',1,'TransactData::Builder']]],
+  ['disownprevtxhash_37',['disownPrevTxHash',['../classTransactData_1_1InputData_1_1Builder.html#aed6ea8f9725c6a4d404ea4977c1facfb',1,'TransactData::InputData::Builder']]],
+  ['disownpubkey_38',['disownPubKey',['../classTransactData_1_1OutputData_1_1Builder.html#ac4705012afe34c3106b943c52a16176d',1,'TransactData::OutputData::Builder']]]
 ];

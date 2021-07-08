@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['adoptecsign_10',['adoptEcSign',['../classTransaction_1_1Output_1_1Builder.html#a0cb1c7ca61e12541f173e7cd4e3f225a',1,'Transaction::Output::Builder']]],
-  ['adoptinputs_11',['adoptInputs',['../classTransaction_1_1Builder.html#a52611836fd8156ee01f02b2bda10bcce',1,'Transaction::Builder']]],
-  ['adoptoutputs_12',['adoptOutputs',['../classTransaction_1_1Builder.html#afdeacdfdf0ea1ff11a41ee4880043ee6',1,'Transaction::Builder']]],
-  ['adoptprevtxhash_13',['adoptPrevTxHash',['../classTransaction_1_1Output_1_1Builder.html#ac6cbba521ac47369bfd6a07889063dda',1,'Transaction::Output::Builder']]],
-  ['adoptpubkey_14',['adoptPubKey',['../classTransaction_1_1Input_1_1Builder.html#abd17df2c3240d341b81abb29e0e3adba',1,'Transaction::Input::Builder']]],
-  ['asreader_15',['asReader',['../classTransaction_1_1Builder.html#a89097852295bf854128aab9e826bbcf6',1,'Transaction::Builder::asReader()'],['../classTransaction_1_1Output_1_1Builder.html#aff395887c52e86f0a045740c67a22d1e',1,'Transaction::Output::Builder::asReader()'],['../classTransaction_1_1Input_1_1Builder.html#a6baa1479ba6e97bdc2770d67cddb0fbf',1,'Transaction::Input::Builder::asReader()']]]
+  ['addinput_10',['AddInput',['../classTransaction.html#aedf1706f3892eaf71eefc352f7a53993',1,'Transaction']]],
+  ['addoutput_11',['AddOutput',['../classTransaction.html#ad78ec04ec64052dade594f3551439f8e',1,'Transaction']]],
+  ['adoptecsign_12',['adoptEcSign',['../classTransactData_1_1Builder.html#a1c50b86292c8abbd60d435e1987352cf',1,'TransactData::Builder']]],
+  ['adoptinputs_13',['adoptInputs',['../classTransactData_1_1Builder.html#a8a897d66b751cd446a6e69680818e7bd',1,'TransactData::Builder']]],
+  ['adoptoutputs_14',['adoptOutputs',['../classTransactData_1_1Builder.html#a95a75ecfebeb3b6766799063c29fa16b',1,'TransactData::Builder']]],
+  ['adoptprevtxhash_15',['adoptPrevTxHash',['../classTransactData_1_1InputData_1_1Builder.html#aad23c1f5c5a13143cf47f1fdf6f34113',1,'TransactData::InputData::Builder']]],
+  ['adoptpubkey_16',['adoptPubKey',['../classTransactData_1_1OutputData_1_1Builder.html#ab2aca257a1d16a44fa4c9d825d2dcb0a',1,'TransactData::OutputData::Builder']]],
+  ['asreader_17',['asReader',['../classTransactData_1_1Builder.html#ab0f84359585fab1d6f7f129933ede1f9',1,'TransactData::Builder::asReader()'],['../classTransactData_1_1InputData_1_1Builder.html#a26ca7ccebde1c1de648599ad2bfb9271',1,'TransactData::InputData::Builder::asReader()'],['../classTransactData_1_1OutputData_1_1Builder.html#a17b461047ea3efc19bb448f94046bcc7',1,'TransactData::OutputData::Builder::asReader()']]]
 ];
