@@ -18,6 +18,31 @@ class Transaction{
     std::vector<Input> inputs_;
     std::vector<Output> outputs_;
 
+    template<typename INTEGRAL_TYPE>
+    ByteMessage as_bytes(INTEGRAL_TYPE val)const{
+        ByteMessage res;
+        for(uint32_t i = 0;i < sizeof(val);i++){
+            res.push_back((val >> i) & 0xFF);
+        }
+        return res;
+    }
+
+    ByteMessage input_as_bytes(const Input& inp) const{
+        ByteMessage res;
+        copy(inp.prev_tx_hash_.begin(), inp.prev_tx_hash_.end(), back_inserter(res));
+        auto integral_bytes = as_bytes(inp.out_idx_);
+        copy(integral_bytes.begin(), integral_bytes.end(), back_inserter(res));
+        return res;
+    }
+
+    ByteMessage output_as_bytes(const Output& out) const {        
+        ByteMessage res;
+        auto integral_bytes = as_bytes(out.value_);
+        copy(integral_bytes.begin(), integral_bytes.end(), back_inserter(res));
+        copy(out.pub_key_.begin(), out.pub_key_.end(), back_inserter(res));
+        return res;
+    }
+
 public:    
     void AddInput(const Input& in);
     void AddOutput(const Output& out);
@@ -26,6 +51,6 @@ public:
     
     ByteMessage Serialize() const;
     void Deserialize(const ByteMessage& msg);
-    void Sign();
-    SHA256_Digest Hash() const;
+    ByteMessage GetContextForSign() const;
+    ByteMessage GetContextForHash() const;
 };

@@ -8,19 +8,25 @@
 using namespace std;
 
 void Transaction::AddInput(const Transaction::Input& in){
-
+    inputs_.push_back(in);
 }
 
 void Transaction::AddOutput(const Transaction::Output& out){
-
+    outputs_.push_back(out);
 }
 
 const Transaction::Output& Transaction::GetOutput(uint16_t idx) const{
-
+    if(idx >= outputs_.size())
+        EXIT_WITH_MSG("index out of range");
+    
+    return outputs_[idx];
 }
 
 const Transaction::Input& Transaction::GetInput(uint16_t idx) const{
-
+    if(idx >= inputs_.size())
+        EXIT_WITH_MSG("index out of range");
+    
+    return inputs_[idx];
 }
 
 ByteMessage Transaction::Serialize() const{
@@ -81,10 +87,26 @@ void Transaction::Deserialize(const ByteMessage& msg){
     }
 }
 
-void Transaction::Sign(){
+ByteMessage Transaction::GetContextForSign() const{
+    ByteMessage res;
+    for(const auto& inp : inputs_){
+        auto input_bytes = input_as_bytes(inp);
+        copy(input_bytes.begin(), input_bytes.end(), back_inserter(res));
+    }
 
+    for(const auto& out : outputs_){
+        auto output_bytes = output_as_bytes(out);
+        copy(output_bytes.begin(), output_bytes.end(), back_inserter(res));
+    }
+
+    return res;    
 }
 
-SHA256_Digest Transaction::Hash() const{
-
+ByteMessage Transaction::GetContextForHash() const{
+    ByteMessage res;
+    copy(ec_sign_.begin(), ec_sign_.end(), back_inserter(res));
+    auto context_for_sign = GetContextForSign();
+    
+    copy(context_for_sign.begin(), context_for_sign.end(), back_inserter(res));
+    return res;    
 }
