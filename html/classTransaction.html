@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classTransaction-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -95,10 +96,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5e68dcdc40029034231fbffe979b7ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af12d5a671c730176cf7990f65fcf8bfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction.html#af12d5a671c730176cf7990f65fcf8bfd">Deserialize</a> (const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;msg)</td></tr>
 <tr class="separator:af12d5a671c730176cf7990f65fcf8bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8faaf645a15062e5c1b41353edc0acf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction.html#a8faaf645a15062e5c1b41353edc0acf3">Sign</a> ()</td></tr>
-<tr class="separator:a8faaf645a15062e5c1b41353edc0acf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8b2ed941bf1d7f60e749dbbc2ee387"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a79a82216b5b2f5b8bd5acb4f09a89b9c">SHA256_Digest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction.html#a3b8b2ed941bf1d7f60e749dbbc2ee387">Hash</a> () const</td></tr>
-<tr class="separator:a3b8b2ed941bf1d7f60e749dbbc2ee387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9470bb6b370d2f6d42ae8e18832a722e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction.html#a9470bb6b370d2f6d42ae8e18832a722e">GetContextForSign</a> () const</td></tr>
+<tr class="separator:a9470bb6b370d2f6d42ae8e18832a722e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3aea17087021046fe082f88edd847f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction.html#a5f3aea17087021046fe082f88edd847f">GetContextForHash</a> () const</td></tr>
+<tr class="separator:a5f3aea17087021046fe082f88edd847f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae86608ecfdcddc9d0ac96e7754629e26"><td class="memTemplParams" colspan="2">template&lt;typename INTEGRAL_TYPE &gt; </td></tr>
+<tr class="memitem:ae86608ecfdcddc9d0ac96e7754629e26"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classTransaction.html#ae86608ecfdcddc9d0ac96e7754629e26">as_bytes</a> (INTEGRAL_TYPE val) const</td></tr>
+<tr class="separator:ae86608ecfdcddc9d0ac96e7754629e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab111d2190fd7397183276ce8aa92e586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction.html#ab111d2190fd7397183276ce8aa92e586">input_as_bytes</a> (const <a class="el" href="structTransaction_1_1Input.html">Input</a> &amp;inp) const</td></tr>
+<tr class="separator:ab111d2190fd7397183276ce8aa92e586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bfebaa2e7ba7fc04a71cee41888b47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction.html#ae1bfebaa2e7ba7fc04a71cee41888b47">output_as_bytes</a> (const <a class="el" href="structTransaction_1_1Output.html">Output</a> &amp;out) const</td></tr>
+<tr class="separator:ae1bfebaa2e7ba7fc04a71cee41888b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -146,6 +157,34 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae86608ecfdcddc9d0ac96e7754629e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86608ecfdcddc9d0ac96e7754629e26">&#9670;&nbsp;</a></span>as_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename INTEGRAL_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> Transaction::as_bytes </td>
+          <td>(</td>
+          <td class="paramtype">INTEGRAL_TYPE&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af12d5a671c730176cf7990f65fcf8bfd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af12d5a671c730176cf7990f65fcf8bfd">&#9670;&nbsp;</a></span>Deserialize()</h2>
 
@@ -158,6 +197,40 @@ Private Attributes</h2></td></tr>
           <td class="paramtype">const <a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f3aea17087021046fe082f88edd847f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f3aea17087021046fe082f88edd847f">&#9670;&nbsp;</a></span>GetContextForHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> Transaction::GetContextForHash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9470bb6b370d2f6d42ae8e18832a722e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9470bb6b370d2f6d42ae8e18832a722e">&#9670;&nbsp;</a></span>GetContextForSign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> Transaction::GetContextForSign </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,19 +273,54 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b8b2ed941bf1d7f60e749dbbc2ee387"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b8b2ed941bf1d7f60e749dbbc2ee387">&#9670;&nbsp;</a></span>Hash()</h2>
+<a id="ab111d2190fd7397183276ce8aa92e586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab111d2190fd7397183276ce8aa92e586">&#9670;&nbsp;</a></span>input_as_bytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="crypto_8h.html#a79a82216b5b2f5b8bd5acb4f09a89b9c">SHA256_Digest</a> Transaction::Hash </td>
+          <td class="memname"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> Transaction::input_as_bytes </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structTransaction_1_1Input.html">Input</a> &amp;&#160;</td>
+          <td class="paramname"><em>inp</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1bfebaa2e7ba7fc04a71cee41888b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bfebaa2e7ba7fc04a71cee41888b47">&#9670;&nbsp;</a></span>output_as_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> Transaction::output_as_bytes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structTransaction_1_1Output.html">Output</a> &amp;&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -228,23 +336,6 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8faaf645a15062e5c1b41353edc0acf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8faaf645a15062e5c1b41353edc0acf3">&#9670;&nbsp;</a></span>Sign()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Transaction::Sign </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

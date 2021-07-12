@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['wallet_126',['Wallet',['../classWallet.html',1,'Wallet'],['../classWallet.html#ad9be9e49244b78db9099fcaeccd1af04',1,'Wallet::Wallet()']]],
-  ['wallet_2ecpp_127',['wallet.cpp',['../wallet_8cpp.html',1,'']]],
-  ['wallet_2eh_128',['wallet.h',['../wallet_8h.html',1,'']]]
+  ['value_5f_185',['value_',['../structTransaction_1_1Output.html#a697c0111fa50089b63daa9ff4259f269',1,'Transaction::Output']]],
+  ['verifysign_186',['VerifySign',['../crypto_8h.html#a4064f356b0f73f045ac9467d69ab440a',1,'crypto.h']]]
 ];

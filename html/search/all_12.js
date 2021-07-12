@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['value_5f_124',['value_',['../structTransaction_1_1Output.html#a697c0111fa50089b63daa9ff4259f269',1,'Transaction::Output']]],
-  ['verifysign_125',['VerifySign',['../crypto_8h.html#a4064f356b0f73f045ac9467d69ab440a',1,'crypto.h']]]
+  ['utils_2ecpp_183',['utils.cpp',['../utils_8cpp.html',1,'']]],
+  ['utils_2eh_184',['utils.h',['../utils_8h.html',1,'']]]
 ];

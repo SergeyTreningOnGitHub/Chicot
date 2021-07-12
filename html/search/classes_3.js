@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['output_134',['Output',['../structTransaction_1_1Output.html',1,'Transaction']]],
-  ['outputdata_135',['OutputData',['../structTransactData_1_1OutputData.html',1,'TransactData']]]
+  ['ledger_197',['Ledger',['../classLedger.html',1,'']]],
+  ['ledgerdata_198',['LedgerData',['../structLedgerData.html',1,'']]]
 ];

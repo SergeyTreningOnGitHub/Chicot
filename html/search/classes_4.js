@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pipeline_136',['Pipeline',['../classTransactData_1_1InputData_1_1Pipeline.html',1,'TransactData::InputData::Pipeline'],['../classTransactData_1_1OutputData_1_1Pipeline.html',1,'TransactData::OutputData::Pipeline'],['../classTransactData_1_1Pipeline.html',1,'TransactData::Pipeline']]]
+  ['output_199',['Output',['../structTransaction_1_1Output.html',1,'Transaction']]],
+  ['outputdata_200',['OutputData',['../structTransactData_1_1OutputData.html',1,'TransactData']]]
 ];

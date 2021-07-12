@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['s_5f85593a3f6a09e2e0_247',['s_85593a3f6a09e2e0',['../namespacecapnp_1_1schemas.html#aa735d195f3a4a7bdbb921e8cf54ce05e',1,'capnp::schemas']]],
-  ['s_5fa0e6a4aa33384046_248',['s_a0e6a4aa33384046',['../namespacecapnp_1_1schemas.html#aa2e9b9a575126e09cfa679d3e363c067',1,'capnp::schemas']]],
-  ['s_5fc7c05cd4e4343fdf_249',['s_c7c05cd4e4343fdf',['../namespacecapnp_1_1schemas.html#a1e482253381df562dd2d7bfb5399e23f',1,'capnp::schemas']]],
-  ['sha256_5fsize_250',['SHA256_SIZE',['../crypto_8h.html#a87802b739e02e743dd1ee14131aefc9a',1,'crypto.h']]]
+  ['params_5f_363',['params_',['../classWallet.html#a08147ca018252d8e568cdffb8e572fee',1,'Wallet']]],
+  ['prev_5fblock_5fhash_5f_364',['prev_block_hash_',['../classBlock.html#a52eea2005daff5a09c1a4603b4627f2b',1,'Block']]],
+  ['prev_5ftx_5fhash_5f_365',['prev_tx_hash_',['../structTransaction_1_1Input.html#a14cb30354f29d96662d472ac3a1dc6d2',1,'Transaction::Input']]],
+  ['pub_5fkey_5f_366',['pub_key_',['../structTransaction_1_1Output.html#a4832787fbc84c16b11b766b628478cd0',1,'Transaction::Output']]]
 ];

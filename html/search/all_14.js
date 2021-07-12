@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_7ewallet_129',['~Wallet',['../classWallet.html#a443dc95f50e4a9d8e6d5282e13fedcde',1,'Wallet']]]
+  ['wallet_187',['Wallet',['../classWallet.html',1,'Wallet'],['../classWallet.html#ad9be9e49244b78db9099fcaeccd1af04',1,'Wallet::Wallet()']]],
+  ['wallet_2ecpp_188',['wallet.cpp',['../wallet_8cpp.html',1,'']]],
+  ['wallet_2eh_189',['wallet.h',['../wallet_8h.html',1,'']]]
 ];
