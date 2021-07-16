@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Command parser: Inc/Ledger.h Source File</title>
+<title>Command parser: Inc/ledger.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,10 +67,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Ledger.h</div>  </div>
+<div class="title">ledger.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="Ledger_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="ledger_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="transaction_8h.html">transaction.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="crypto_8h.html">crypto.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
@@ -83,26 +83,26 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classBlock.html#ac779972b59cb6cc6c9cb61defb9fb0d1">   11</a></span>&#160;    std::vector&lt;Transaction&gt; <a class="code" href="classBlock.html#ac779972b59cb6cc6c9cb61defb9fb0d1">txs_</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classBlock.html#a1a3c3e8a480202e4b631e4d0abf681eb">   14</a></span>&#160;    <a class="code" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> <a class="code" href="classBlock.html#a1a3c3e8a480202e4b631e4d0abf681eb">Serialize</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classBlock.html#ac202b002880cda62ff6b486f49bd1c7c">   15</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBlock.html#ac202b002880cda62ff6b486f49bd1c7c">Deserialize</a>(<span class="keyword">const</span> <a class="code" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a>&amp; msg);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a> <a class="code" href="classBlock.html#a1a3c3e8a480202e4b631e4d0abf681eb">Serialize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBlock.html#ac202b002880cda62ff6b486f49bd1c7c">Deserialize</a>(<span class="keyword">const</span> <a class="code" href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a>&amp; msg);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classLedger.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLedger.html">Ledger</a>{</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classLedger.html#a9cca002fdf980fda3f757b68a78360cd">   19</a></span>&#160;    std::vector&lt;Block&gt; <a class="code" href="classLedger.html#a9cca002fdf980fda3f757b68a78360cd">blocks</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classLedger.html#ae362956c61abd222c9b3bd2ca45d4744">   19</a></span>&#160;    <a class="code" href="classBlock.html">Block</a> <a class="code" href="classLedger.html#ae362956c61abd222c9b3bd2ca45d4744">cur_block_</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="ttc" id="aclassBlock_html"><div class="ttname"><a href="classBlock.html">Block</a></div><div class="ttdef"><b>Definition:</b> Ledger.h:5</div></div>
-<div class="ttc" id="aclassBlock_html_a035fec0fd7ae251496d73ac87de588e5"><div class="ttname"><a href="classBlock.html#a035fec0fd7ae251496d73ac87de588e5">Block::merkle_root_</a></div><div class="ttdeci">SHA256_Digest merkle_root_</div><div class="ttdef"><b>Definition:</b> Ledger.h:7</div></div>
-<div class="ttc" id="aclassBlock_html_a1a3c3e8a480202e4b631e4d0abf681eb"><div class="ttname"><a href="classBlock.html#a1a3c3e8a480202e4b631e4d0abf681eb">Block::Serialize</a></div><div class="ttdeci">ByteMessage Serialize() const</div></div>
-<div class="ttc" id="aclassBlock_html_a1bc5436265587e14d500ffa6beb65056"><div class="ttname"><a href="classBlock.html#a1bc5436265587e14d500ffa6beb65056">Block::timestamp_</a></div><div class="ttdeci">uint32_t timestamp_</div><div class="ttdef"><b>Definition:</b> Ledger.h:8</div></div>
-<div class="ttc" id="aclassBlock_html_a52eea2005daff5a09c1a4603b4627f2b"><div class="ttname"><a href="classBlock.html#a52eea2005daff5a09c1a4603b4627f2b">Block::prev_block_hash_</a></div><div class="ttdeci">SHA256_Digest prev_block_hash_</div><div class="ttdef"><b>Definition:</b> Ledger.h:6</div></div>
-<div class="ttc" id="aclassBlock_html_a9364c7998812aea85d1a26aa0cb6cdfd"><div class="ttname"><a href="classBlock.html#a9364c7998812aea85d1a26aa0cb6cdfd">Block::difficulty_</a></div><div class="ttdeci">uint32_t difficulty_</div><div class="ttdef"><b>Definition:</b> Ledger.h:9</div></div>
-<div class="ttc" id="aclassBlock_html_aa45f541958d3f9bde561fb3c41aef868"><div class="ttname"><a href="classBlock.html#aa45f541958d3f9bde561fb3c41aef868">Block::nonce_</a></div><div class="ttdeci">ByteMessage nonce_</div><div class="ttdef"><b>Definition:</b> Ledger.h:10</div></div>
-<div class="ttc" id="aclassBlock_html_ac202b002880cda62ff6b486f49bd1c7c"><div class="ttname"><a href="classBlock.html#ac202b002880cda62ff6b486f49bd1c7c">Block::Deserialize</a></div><div class="ttdeci">void Deserialize(const ByteMessage &amp;msg)</div></div>
-<div class="ttc" id="aclassBlock_html_ac779972b59cb6cc6c9cb61defb9fb0d1"><div class="ttname"><a href="classBlock.html#ac779972b59cb6cc6c9cb61defb9fb0d1">Block::txs_</a></div><div class="ttdeci">std::vector&lt; Transaction &gt; txs_</div><div class="ttdef"><b>Definition:</b> Ledger.h:11</div></div>
-<div class="ttc" id="aclassLedger_html"><div class="ttname"><a href="classLedger.html">Ledger</a></div><div class="ttdef"><b>Definition:</b> Ledger.h:18</div></div>
-<div class="ttc" id="aclassLedger_html_a9cca002fdf980fda3f757b68a78360cd"><div class="ttname"><a href="classLedger.html#a9cca002fdf980fda3f757b68a78360cd">Ledger::blocks</a></div><div class="ttdeci">std::vector&lt; Block &gt; blocks</div><div class="ttdef"><b>Definition:</b> Ledger.h:19</div></div>
+<div class="ttc" id="aclassBlock_html"><div class="ttname"><a href="classBlock.html">Block</a></div><div class="ttdef"><b>Definition:</b> ledger.h:5</div></div>
+<div class="ttc" id="aclassBlock_html_a035fec0fd7ae251496d73ac87de588e5"><div class="ttname"><a href="classBlock.html#a035fec0fd7ae251496d73ac87de588e5">Block::merkle_root_</a></div><div class="ttdeci">SHA256_Digest merkle_root_</div><div class="ttdef"><b>Definition:</b> ledger.h:7</div></div>
+<div class="ttc" id="aclassBlock_html_a1a3c3e8a480202e4b631e4d0abf681eb"><div class="ttname"><a href="classBlock.html#a1a3c3e8a480202e4b631e4d0abf681eb">Block::Serialize</a></div><div class="ttdeci">ByteMessage Serialize() const</div><div class="ttdef"><b>Definition:</b> ledger.cpp:10</div></div>
+<div class="ttc" id="aclassBlock_html_a1bc5436265587e14d500ffa6beb65056"><div class="ttname"><a href="classBlock.html#a1bc5436265587e14d500ffa6beb65056">Block::timestamp_</a></div><div class="ttdeci">uint32_t timestamp_</div><div class="ttdef"><b>Definition:</b> ledger.h:8</div></div>
+<div class="ttc" id="aclassBlock_html_a52eea2005daff5a09c1a4603b4627f2b"><div class="ttname"><a href="classBlock.html#a52eea2005daff5a09c1a4603b4627f2b">Block::prev_block_hash_</a></div><div class="ttdeci">SHA256_Digest prev_block_hash_</div><div class="ttdef"><b>Definition:</b> ledger.h:6</div></div>
+<div class="ttc" id="aclassBlock_html_a9364c7998812aea85d1a26aa0cb6cdfd"><div class="ttname"><a href="classBlock.html#a9364c7998812aea85d1a26aa0cb6cdfd">Block::difficulty_</a></div><div class="ttdeci">uint32_t difficulty_</div><div class="ttdef"><b>Definition:</b> ledger.h:9</div></div>
+<div class="ttc" id="aclassBlock_html_aa45f541958d3f9bde561fb3c41aef868"><div class="ttname"><a href="classBlock.html#aa45f541958d3f9bde561fb3c41aef868">Block::nonce_</a></div><div class="ttdeci">ByteMessage nonce_</div><div class="ttdef"><b>Definition:</b> ledger.h:10</div></div>
+<div class="ttc" id="aclassBlock_html_ac202b002880cda62ff6b486f49bd1c7c"><div class="ttname"><a href="classBlock.html#ac202b002880cda62ff6b486f49bd1c7c">Block::Deserialize</a></div><div class="ttdeci">void Deserialize(const ByteMessage &amp;msg)</div><div class="ttdef"><b>Definition:</b> ledger.cpp:59</div></div>
+<div class="ttc" id="aclassBlock_html_ac779972b59cb6cc6c9cb61defb9fb0d1"><div class="ttname"><a href="classBlock.html#ac779972b59cb6cc6c9cb61defb9fb0d1">Block::txs_</a></div><div class="ttdeci">std::vector&lt; Transaction &gt; txs_</div><div class="ttdef"><b>Definition:</b> ledger.h:11</div></div>
+<div class="ttc" id="aclassLedger_html"><div class="ttname"><a href="classLedger.html">Ledger</a></div><div class="ttdef"><b>Definition:</b> ledger.h:18</div></div>
+<div class="ttc" id="aclassLedger_html_ae362956c61abd222c9b3bd2ca45d4744"><div class="ttname"><a href="classLedger.html#ae362956c61abd222c9b3bd2ca45d4744">Ledger::cur_block_</a></div><div class="ttdeci">Block cur_block_</div><div class="ttdef"><b>Definition:</b> ledger.h:19</div></div>
 <div class="ttc" id="acrypto_8h_html"><div class="ttname"><a href="crypto_8h.html">crypto.h</a></div></div>
 <div class="ttc" id="acrypto_8h_html_a07182bcc71bc889490bf23ed33f79774"><div class="ttname"><a href="crypto_8h.html#a07182bcc71bc889490bf23ed33f79774">ByteMessage</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; ByteMessage</div><div class="ttdef"><b>Definition:</b> crypto.h:21</div></div>
 <div class="ttc" id="acrypto_8h_html_a79a82216b5b2f5b8bd5acb4f09a89b9c"><div class="ttname"><a href="crypto_8h.html#a79a82216b5b2f5b8bd5acb4f09a89b9c">SHA256_Digest</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; SHA256_Digest</div><div class="ttdef"><b>Definition:</b> crypto.h:20</div></div>
