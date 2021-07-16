@@ -31,25 +31,25 @@ const Transaction::Input& Transaction::GetInput(uint16_t idx) const{
 
 ByteMessage Transaction::Serialize() const{
     capnp::MallocMessageBuilder message;
-    TransactData::Builder transact = message.initRoot<TransactData>();
-    capnp::Data::Builder  sign = transact.initEcSign(ec_sign_.size());
-    copy(ec_sign_.begin(), ec_sign_.end(), sign.begin());
+    TransactData::Builder tx_builder = message.initRoot<TransactData>();
+    capnp::Data::Builder  sign_builder = tx_builder.initEcSign(ec_sign_.size());
+    copy(ec_sign_.begin(), ec_sign_.end(), sign_builder.begin());
     
-    capnp::List<TransactData::InputData> ::Builder inps = transact.initInputs(inputs_.size());     
+    capnp::List<TransactData::InputData> ::Builder inps_builder = tx_builder.initInputs(inputs_.size());     
 
-    for(size_t i = 0;i < inps.size();i++){
-        auto inp = inps[i];
-        inp.setOutIdx(inputs_[i].out_idx_);        
-        auto prev_tx_hash = inp.initPrevTxHash(inputs_[i].prev_tx_hash_.size());
-        copy(inputs_[i].prev_tx_hash_.begin(), inputs_[i].prev_tx_hash_.end(), prev_tx_hash.begin());
+    for(size_t i = 0;i < inps_builder.size();i++){
+        auto inp_builder = inps_builder[i];
+        inp_builder.setOutIdx(inputs_[i].out_idx_);        
+        auto prev_tx_hash_builder = inp_builder.initPrevTxHash(inputs_[i].prev_tx_hash_.size());
+        copy(inputs_[i].prev_tx_hash_.begin(), inputs_[i].prev_tx_hash_.end(), prev_tx_hash_builder.begin());
     }
 
-    capnp::List<TransactData::OutputData> ::Builder outs = transact.initOutputs(outputs_.size());
-    for(size_t i = 0;i < outs.size();i++){
-        auto out = outs[i];
-        out.setValue(outputs_[i].value_);
-        auto pub_key = out.initPubKey(outputs_[i].pub_key_.size());
-        copy(outputs_[i].pub_key_.begin(), outputs_[i].pub_key_.end(), pub_key.begin());
+    capnp::List<TransactData::OutputData> ::Builder outs_builder = tx_builder.initOutputs(outputs_.size());
+    for(size_t i = 0;i < outs_builder.size();i++){
+        auto out_builder = outs_builder[i];
+        out_builder.setValue(outputs_[i].value_);
+        auto pub_key_builder = out_builder.initPubKey(outputs_[i].pub_key_.size());
+        copy(outputs_[i].pub_key_.begin(), outputs_[i].pub_key_.end(), pub_key_builder.begin());
     }
     
     auto data = messageToFlatArray(message).asBytes();
@@ -62,28 +62,36 @@ void Transaction::Deserialize(const ByteMessage& msg){
     
     capnp::FlatArrayMessageReader mess_reader(p_message);
     
-    TransactData::Reader transact = mess_reader.getRoot<TransactData>();
-    auto sign = transact.getEcSign();
+    TransactData::Reader tx_reader = mess_reader.getRoot<TransactData>();
+    auto sign_reader = tx_reader.getEcSign();
 
-    ec_sign_.resize(sign.size());
-    copy(sign.begin(), sign.end(), ec_sign_.begin());
+    ec_sign_.resize(sign_reader.size());
+    copy(sign_reader.begin(), sign_reader.end(), ec_sign_.begin());
 
-    auto inps = transact.getInputs();
-    for(size_t i = 0;i < inps.size();i++){
-        inputs_[i].out_idx_ = inps[i].getOutIdx();
-        auto prev_tx_hash = inps[i].getPrevTxHash();
+    auto inps_reader = tx_reader.getInputs();    
 
-        inputs_[i].prev_tx_hash_.resize(prev_tx_hash.size());
-        copy(prev_tx_hash.begin(), prev_tx_hash.end(), inputs_[i].prev_tx_hash_.begin());
+    for(size_t i = 0;i < inps_reader.size();i++){
+        Transaction::Input inp;
+        inp.out_idx_ = inps_reader[i].getOutIdx();
+
+        auto prev_tx_hash_reader = inps_reader[i].getPrevTxHash();
+        inp.prev_tx_hash_.resize(prev_tx_hash_reader.size());
+        copy(prev_tx_hash_reader.begin(), prev_tx_hash_reader.end(), inp.prev_tx_hash_.begin());
+
+        AddInput(inp);
+
     }
 
-    auto outs = transact.getOutputs();
-    for(size_t i = 0;i < outs.size();i++){
-        outputs_[i].value_ = outs[i].getValue();
-        auto pub_key = outs[i].getPubKey();
+    auto outs_reader = tx_reader.getOutputs();
 
-        outputs_[i].pub_key_.resize(pub_key.size());
-        copy(pub_key.begin(), pub_key.end(), outputs_[i].pub_key_.begin());
+    for(size_t i = 0;i < outs_reader.size();i++){
+        Transaction::Output out;
+        out.value_ = outs_reader[i].getValue();        
+        auto pub_key_reader = outs_reader[i].getPubKey();
+
+        out.pub_key_.resize(pub_key_reader.size());
+        copy(pub_key_reader.begin(), pub_key_reader.end(), out.pub_key_.begin());
+        AddOutput(out);
     }
 }
 
@@ -109,4 +117,13 @@ ByteMessage Transaction::GetContextForHash() const{
     
     copy(context_for_sign.begin(), context_for_sign.end(), back_inserter(res));
     return res;    
+}
+
+size_t Transaction::CountInputs() const{
+    return inputs_.size();
+}
+
+
+size_t Transaction::CountOutputs() const{
+    return outputs_.size();
 }

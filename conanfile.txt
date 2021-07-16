@@ -3,6 +3,7 @@ openssl/1.1.1k
 capnproto/0.8.0
 zeromq/4.3.4
 gtest/cci.20210126
+leveldb/1.22
 
 [generators]
 cmake

@@ -18,7 +18,6 @@ CAPNP_DECLARE_SCHEMA(c7c05cd4e4343fdf);
 CAPNP_DECLARE_SCHEMA(a0e6a4aa33384046);
 CAPNP_DECLARE_SCHEMA(85593a3f6a09e2e0);
 CAPNP_DECLARE_SCHEMA(a584e4b88a131c66);
-CAPNP_DECLARE_SCHEMA(e45c9178e59873a9);
 
 }  // namespace schemas
 }  // namespace capnp
@@ -80,21 +79,6 @@ struct BlockData {
 
   struct _capnpPrivate {
     CAPNP_DECLARE_STRUCT_HEADER(a584e4b88a131c66, 1, 4)
-    #if !CAPNP_LITE
-    static constexpr ::capnp::_::RawBrandedSchema const* brand() { return &schema->defaultBrand; }
-    #endif  // !CAPNP_LITE
-  };
-};
-
-struct LedgerData {
-  LedgerData() = delete;
-
-  class Reader;
-  class Builder;
-  class Pipeline;
-
-  struct _capnpPrivate {
-    CAPNP_DECLARE_STRUCT_HEADER(e45c9178e59873a9, 0, 1)
     #if !CAPNP_LITE
     static constexpr ::capnp::_::RawBrandedSchema const* brand() { return &schema->defaultBrand; }
     #endif  // !CAPNP_LITE
@@ -497,87 +481,6 @@ private:
 };
 #endif  // !CAPNP_LITE
 
-class LedgerData::Reader {
-public:
-  typedef LedgerData Reads;
-
-  Reader() = default;
-  inline explicit Reader(::capnp::_::StructReader base): _reader(base) {}
-
-  inline ::capnp::MessageSize totalSize() const {
-    return _reader.totalSize().asPublic();
-  }
-
-#if !CAPNP_LITE
-  inline ::kj::StringTree toString() const {
-    return ::capnp::_::structString(_reader, *_capnpPrivate::brand());
-  }
-#endif  // !CAPNP_LITE
-
-  inline bool hasBlocks() const;
-  inline  ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>::Reader getBlocks() const;
-
-private:
-  ::capnp::_::StructReader _reader;
-  template <typename, ::capnp::Kind>
-  friend struct ::capnp::ToDynamic_;
-  template <typename, ::capnp::Kind>
-  friend struct ::capnp::_::PointerHelpers;
-  template <typename, ::capnp::Kind>
-  friend struct ::capnp::List;
-  friend class ::capnp::MessageBuilder;
-  friend class ::capnp::Orphanage;
-};
-
-class LedgerData::Builder {
-public:
-  typedef LedgerData Builds;
-
-  Builder() = delete;  // Deleted to discourage incorrect usage.
-                       // You can explicitly initialize to nullptr instead.
-  inline Builder(decltype(nullptr)) {}
-  inline explicit Builder(::capnp::_::StructBuilder base): _builder(base) {}
-  inline operator Reader() const { return Reader(_builder.asReader()); }
-  inline Reader asReader() const { return *this; }
-
-  inline ::capnp::MessageSize totalSize() const { return asReader().totalSize(); }
-#if !CAPNP_LITE
-  inline ::kj::StringTree toString() const { return asReader().toString(); }
-#endif  // !CAPNP_LITE
-
-  inline bool hasBlocks();
-  inline  ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>::Builder getBlocks();
-  inline void setBlocks( ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>::Reader value);
-  inline  ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>::Builder initBlocks(unsigned int size);
-  inline void adoptBlocks(::capnp::Orphan< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>>&& value);
-  inline ::capnp::Orphan< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>> disownBlocks();
-
-private:
-  ::capnp::_::StructBuilder _builder;
-  template <typename, ::capnp::Kind>
-  friend struct ::capnp::ToDynamic_;
-  friend class ::capnp::Orphanage;
-  template <typename, ::capnp::Kind>
-  friend struct ::capnp::_::PointerHelpers;
-};
-
-#if !CAPNP_LITE
-class LedgerData::Pipeline {
-public:
-  typedef LedgerData Pipelines;
-
-  inline Pipeline(decltype(nullptr)): _typeless(nullptr) {}
-  inline explicit Pipeline(::capnp::AnyPointer::Pipeline&& typeless)
-      : _typeless(kj::mv(typeless)) {}
-
-private:
-  ::capnp::AnyPointer::Pipeline _typeless;
-  friend class ::capnp::PipelineHook;
-  template <typename, ::capnp::Kind>
-  friend struct ::capnp::ToDynamic_;
-};
-#endif  // !CAPNP_LITE
-
 // =======================================================================================
 
 inline bool TransactData::Reader::hasOutputs() const {
@@ -940,40 +843,6 @@ inline void BlockData::Builder::adoptTxs(
 inline ::capnp::Orphan< ::capnp::List< ::TransactData,  ::capnp::Kind::STRUCT>> BlockData::Builder::disownTxs() {
   return ::capnp::_::PointerHelpers< ::capnp::List< ::TransactData,  ::capnp::Kind::STRUCT>>::disown(_builder.getPointerField(
       ::capnp::bounded<3>() * ::capnp::POINTERS));
-}
-
-inline bool LedgerData::Reader::hasBlocks() const {
-  return !_reader.getPointerField(
-      ::capnp::bounded<0>() * ::capnp::POINTERS).isNull();
-}
-inline bool LedgerData::Builder::hasBlocks() {
-  return !_builder.getPointerField(
-      ::capnp::bounded<0>() * ::capnp::POINTERS).isNull();
-}
-inline  ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>::Reader LedgerData::Reader::getBlocks() const {
-  return ::capnp::_::PointerHelpers< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>>::get(_reader.getPointerField(
-      ::capnp::bounded<0>() * ::capnp::POINTERS));
-}
-inline  ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>::Builder LedgerData::Builder::getBlocks() {
-  return ::capnp::_::PointerHelpers< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>>::get(_builder.getPointerField(
-      ::capnp::bounded<0>() * ::capnp::POINTERS));
-}
-inline void LedgerData::Builder::setBlocks( ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>::Reader value) {
-  ::capnp::_::PointerHelpers< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>>::set(_builder.getPointerField(
-      ::capnp::bounded<0>() * ::capnp::POINTERS), value);
-}
-inline  ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>::Builder LedgerData::Builder::initBlocks(unsigned int size) {
-  return ::capnp::_::PointerHelpers< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>>::init(_builder.getPointerField(
-      ::capnp::bounded<0>() * ::capnp::POINTERS), size);
-}
-inline void LedgerData::Builder::adoptBlocks(
-    ::capnp::Orphan< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>>&& value) {
-  ::capnp::_::PointerHelpers< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>>::adopt(_builder.getPointerField(
-      ::capnp::bounded<0>() * ::capnp::POINTERS), kj::mv(value));
-}
-inline ::capnp::Orphan< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>> LedgerData::Builder::disownBlocks() {
-  return ::capnp::_::PointerHelpers< ::capnp::List< ::BlockData,  ::capnp::Kind::STRUCT>>::disown(_builder.getPointerField(
-      ::capnp::bounded<0>() * ::capnp::POINTERS));
 }
 
 

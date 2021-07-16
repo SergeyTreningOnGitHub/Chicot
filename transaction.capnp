@@ -24,7 +24,3 @@ struct BlockData{
     nonce         @4: Data;
     txs           @5: List(TransactData);
 }
-
-struct LedgerData{
-    blocks @0: List(BlockData);
-}

@@ -16,7 +16,7 @@ public:
 };
 
 class Ledger{
-    std::vector<Block> blocks;
+    Block cur_block_;
 public:
-    
+
 };

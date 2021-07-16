@@ -4,6 +4,7 @@
 #include <vector>
 
 class Transaction{
+public:
     struct Input{
         SHA256_Digest prev_tx_hash_;
         uint16_t out_idx_;
@@ -13,7 +14,7 @@ class Transaction{
         uint64_t value_;
         PublicKey pub_key_;
     };
-
+private:
     EC_Sign  ec_sign_;
     std::vector<Input> inputs_;
     std::vector<Output> outputs_;
@@ -44,10 +45,15 @@ class Transaction{
     }
 
 public:    
+    const EC_Sign& GetEcSign() const;
+    void SetEcSign(const EC_Sign& sign);
     void AddInput(const Input& in);
     void AddOutput(const Output& out);
     const Output& GetOutput(uint16_t idx) const;
     const Input& GetInput(uint16_t idx) const;
+
+    size_t CountInputs() const;
+    size_t CountOutputs() const;
     
     ByteMessage Serialize() const;
     void Deserialize(const ByteMessage& msg);
