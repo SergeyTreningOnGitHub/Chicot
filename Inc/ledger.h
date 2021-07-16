@@ -13,6 +13,8 @@ public:
 
     ByteMessage Serialize() const;
     void Deserialize(const ByteMessage& msg);
+    void AddTx();
+
 };
 
 class Ledger{

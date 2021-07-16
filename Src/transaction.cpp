@@ -7,6 +7,15 @@
 
 using namespace std;
 
+const EC_Sign& Transaction::GetEcSign() const{
+    return ec_sign_;
+}
+
+void Transaction::SetEcSign(const EC_Sign& sign){
+    ec_sign_.resize(sign.size());
+    copy(sign.begin(), sign.end(), ec_sign_.begin());
+}
+
 void Transaction::AddInput(const Transaction::Input& in){
     inputs_.push_back(in);
 }
