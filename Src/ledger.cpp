@@ -114,3 +114,72 @@ void Block::Deserialize(const ByteMessage& msg){
         }
     }
 }
+
+ByteMessage Block::header_as_bytes()const{
+    capnp::MallocMessageBuilder message;
+    BlockData::Builder block_builder = message.initRoot<BlockData>();
+    capnp::Data::Builder prev_block_hash_builder = block_builder.initPrevBlockHash(prev_block_hash_.size());
+    copy(prev_block_hash_.begin(), prev_block_hash_.end(), prev_block_hash_builder.begin());
+
+    capnp::Data::Builder merkle_root_builder = block_builder.initMerkleRoot(merkle_root_.size());
+    copy(merkle_root_.begin(), merkle_root_.end(), merkle_root_builder.begin());
+
+    block_builder.setTimestamp(timestamp_);
+    block_builder.setDifficulty(difficulty_);
+
+    capnp::Data::Builder nonce_builder = block_builder.initNonce(nonce_.size());
+    copy(nonce_.begin(), nonce_.end(), nonce_builder.begin());
+
+    auto data = messageToFlatArray(message).asBytes();
+    return ByteMessage(data.begin(), data.end());
+}
+
+ByteMessage Block::concat_hashes(const SHA256_Digest& lhs, const SHA256_Digest& rhs) const{
+    ByteMessage res;
+    res.reserve(lhs.size() + rhs.size());
+    std::copy(lhs.begin(), lhs.end(), back_inserter(res));
+    std::copy(rhs.begin(), rhs.end(), back_inserter(res));
+    return res;
+}
+
+void Block::collapse_merkle(const vector<SHA256_Digest>& hashes){
+    if(hashes.size() == 1){
+        merkle_root_ = hashes[0];
+        return;
+    }
+
+    vector<SHA256_Digest> collapsed_hashes;
+
+    for(size_t i = 0;i < hashes.size();i += 2){
+        if(i == hashes.size() - 1){
+            collapsed_hashes.push_back(GenDigest(concat_hashes(hashes[i], hashes[i])));
+        }else{
+            collapsed_hashes.push_back(GenDigest(concat_hashes(hashes[i], hashes[i + 1])));
+        }
+    }
+
+    collapse_merkle(collapsed_hashes);
+}
+
+void Block::calc_merkle_root(){
+    vector<SHA256_Digest> hashes;
+    for(const auto& tx : txs_){
+        hashes.push_back(GenDigest(tx.Serialize()));
+    }
+
+    collapse_merkle(hashes);
+}
+
+void Block::AddTx(const Transaction& tx){
+    txs_.push_back(tx);
+    calc_merkle_root();    
+}
+
+
+SHA256_Digest Block::GetDigest() const{
+    return GenDigest(header_as_bytes());
+}
+
+bool Block::IsProvedOfWork() const{
+    
+}

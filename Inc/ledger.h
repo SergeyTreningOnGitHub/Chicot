@@ -9,11 +9,17 @@ class Block{
     uint32_t difficulty_;
     ByteMessage nonce_;
     std::vector<Transaction> txs_;
+
+    void calc_merkle_root();
+    void collapse_merkle(const std::vector<SHA256_Digest>& hashes);
+    ByteMessage concat_hashes(const SHA256_Digest& lhs, const SHA256_Digest& rhs) const;
+    ByteMessage header_as_bytes()const;
 public:
 
     ByteMessage Serialize() const;
     void Deserialize(const ByteMessage& msg);
-    void AddTx();
+    void AddTx(const Transaction& tx);
+    SHA256_Digest GetDigest() const;
 
 };
 
